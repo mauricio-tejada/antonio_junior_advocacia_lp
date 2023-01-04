@@ -4,8 +4,6 @@ export const HomeContainer = styled.section`
     display: flex;
     justify-content: center;
     position: relative;
-
-    margin-bottom: 8rem;
     
     width: 100%;
     max-width: 1224px;
