@@ -16,7 +16,7 @@ export const DefaultButton = styled.button`
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
-        color: ${props => props.theme.gray100};
+        color: ${props => props.theme.gray050};
 
         &:hover {
             background: ${props => props.theme.primaryDark};
@@ -39,7 +39,7 @@ export const InvisibleButton = styled.button`
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
-        color: ${props => props.theme.gray100};
+        color: ${props => props.theme.gray050};
 
         &:hover {
             background: ${props => props.theme.primaryDark};
@@ -63,7 +63,7 @@ export const SmallOutlineButton = styled.button`
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
-        color: ${props => props.theme.gray100};
+        color: ${props => props.theme.gray050};
 
         &:hover {
             background: ${props => props.theme.primaryDark};
@@ -89,7 +89,7 @@ export const SmallInvisibleButton = styled.button`
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
-        color: ${props => props.theme.gray100};
+        color: ${props => props.theme.gray050};
 
         &:hover {
             background: ${props => props.theme.primaryDark};

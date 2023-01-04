@@ -22,7 +22,7 @@ export function Home() {
                 <strong>Justiça</strong>
             </Popup>
 
-            <img src={homeImg} alt="" />
+            <img className="homeBg" src={homeImg} alt="" />
             
             <img src={branchBgImg} alt="" />
 
