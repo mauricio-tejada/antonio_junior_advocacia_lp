@@ -21,6 +21,47 @@ export const HomeContainer = styled.section`
         z-index: 100;
     }
 
+    .paralaxContainer {
+    
+    position: absolute;
+    width: 396px;
+    height: 139px;
+    right: -5%;
+    top: 70%;
+    z-index: 200;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 8px;
+
+    background: ${props => props.theme.gradientBorder};
+    filter: drop-shadow(29px 4px 56px rgba(20, 20, 21, 0.25));
+    backdrop-filter: blur(12px);
+
+
+    border-radius: 4px;
+
+    p {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 29px;
+        color: ${props => props.theme.gray200};
+        opacity: 0.8;
+    }
+
+    strong {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.37rem;
+        color: ${props => props.theme.gray100};
+    }
+
+}
+
     `
 export const HomeContent = styled.div`
     
@@ -60,44 +101,3 @@ export const HomeContent = styled.div`
         
     }
     `
-
-export const Popup = styled.div`
-
-    position: absolute;
-    width: 396px;
-    height: 139px;
-    left: 890px;
-    top: 484px;
-    z-index: 200;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem;
-    gap: 8px;
-
-    background: ${props => props.theme.gradientBorder};
-    filter: drop-shadow(29px 4px 56px rgba(20, 20, 21, 0.25));
-    backdrop-filter: blur(12px);
-
-
-    border-radius: 4px;
-
-    p {
-        font-family: 'Lato';
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 29px;
-        color: ${props => props.theme.gray200};
-        opacity: 0.8;
-    }
-
-    strong {
-        font-family: 'Lato';
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2.37rem;
-        color: ${props => props.theme.gray100};
-    }
-
-`

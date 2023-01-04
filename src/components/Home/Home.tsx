@@ -1,11 +1,19 @@
-import { HomeContainer, HomeContent, Popup } from "./Home-style";
+import { HomeContainer, HomeContent } from "./Home-style";
 import homeImg from "../../assets/home_img.png"
 import { DefaultButton, InvisibleButton } from "../Buttons/Buttons-style";
 import branchBgImg from "../../assets/branch_bg.png"
+import { Parallax } from 'react-scroll-parallax';
+
 
 export function Home() {
     return(
         <HomeContainer>
+
+            <Parallax className="paralaxContainer" speed={-10}>
+                    <p>Trabalhamos em prol da</p>
+                    <strong>Justiça</strong>
+            </Parallax>
+
             <HomeContent>
                 <h1>Resolvemos seus problemas jurídicos com advogados experientes</h1>
                 <div>
@@ -16,11 +24,6 @@ export function Home() {
                     </div>
                 </div>
             </HomeContent>
-
-            <Popup>
-                <p>Trabalhamos em prol da</p>
-                <strong>Justiça</strong>
-            </Popup>
 
             <img className="homeBg" src={homeImg} alt="" />
             
