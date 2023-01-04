@@ -6,7 +6,7 @@ export const MainContainer = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 8rem;
     overflow: hidden;
 
     background: #1C1A22;

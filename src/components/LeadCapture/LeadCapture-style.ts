@@ -31,47 +31,109 @@ export const FormContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
+    
     position: absolute;
     top: -350px;
     left: 108px;
-
+    
     padding: 3rem;
-    background-color: black;
-
+    
+    background: ${props => props.theme.gradientDark};
+    filter: drop-shadow(29px 4px 56px rgba(20, 20, 21, 0.48));
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+    
     width: 44rem;
     height:42.37rem;
+    
+    h2 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 125%;
+    
+        color: ${props => props.theme.gray100};
+    }
 
     p {
         text-align: center;
-    }
 
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 150%;
+
+        color: ${props => props.theme.gray050};
+
+    }
+    
     form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 2rem;
 
         width: 100%;
 
         margin-top: 3.5rem;
 
+
         div {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: row;
+            flex: 1;
             gap: 1rem;
+            width: 100%;
         }
 
-        input {
+        input, textarea {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            padding: 12px 16px;
+            padding: 0.75rem 1rem;
+            width: 100%;
+
+            color: ${props => props.theme.gray100};
+
+            border: 2px solid;
+            border-color: ${props => props.theme.gray300};
+            border-radius: 6px;
+            background: transparent;
+
+            &::placeholder {
+                color: ${props => props.theme.gray100};
+                font-family: 'Fira Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 150%;
+            }
+
+            &:hover {
+                background: ${props => props.theme.gray600};
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+                border-color: ${props => props.theme.primaryDefault};
+
+            }
+
         }
 
         textarea {
             resize: none;
+            width: 100%;
+        }
+
+        button {
+            max-width: 237px;
         }
     }
 `

@@ -6,7 +6,10 @@ export const FooterContainer = styled.footer`
 
     padding: 0 1rem 0 1rem;
 
-    background-color: gray;
+    background: linear-gradient(${props => props.theme.gray800}, ${props => props.theme.gray800}) padding-box,
+                ${props => props.theme.gradientBorder} border-box;
+    border-radius: 8px;
+    border: 1px solid transparent;
 
 `
 export const FooterContent = styled.div`
@@ -17,6 +20,7 @@ export const FooterContent = styled.div`
 
     max-width: 1224px;
     margin: 0 auto;
+
 
     div {
         display: flex;

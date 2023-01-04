@@ -1,3 +1,4 @@
+import { DefaultButton } from "../Buttons/Buttons-style";
 import { Content, FormContainer, LeadCaptureContainer } from "./LeadCapture-style";
 
 export function LeadCapture() {
@@ -20,7 +21,7 @@ export function LeadCapture() {
 
                         <textarea name="" cols={25} rows={10} placeholder="Conte um pouco sobre o seu caso..."></textarea>
 
-                        <button type="submit">Enviar consulta gratuita</button>
+                        <DefaultButton type="submit">Enviar consulta gratuita</DefaultButton>
                     </form>
                 </FormContainer>
             </Content>

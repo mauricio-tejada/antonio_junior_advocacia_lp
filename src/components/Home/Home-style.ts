@@ -4,22 +4,27 @@ export const HomeContainer = styled.section`
     display: flex;
     justify-content: center;
     position: relative;
-
-    margin-bottom: 8rem;
     
     width: 100%;
     max-width: 1224px;
 
     img:last-child {
         position: absolute;
-        left: 0.1%;
+        left: -9%;
         top: 0.15%;
+    }
+
+    .homeBg {
+        position: absolute;
+        right: 10.5%;
+        top: 0;
+        z-index: 100;
     }
 
     `
 export const HomeContent = styled.div`
     
-    margin: 9rem -6.9rem 0 9.5rem;
+    margin: 9rem 17.4rem 0 0;
     z-index: 200;
 
     display: flex;
@@ -61,8 +66,9 @@ export const Popup = styled.div`
     position: absolute;
     width: 396px;
     height: 139px;
-    left: 920px;
+    left: 890px;
     top: 484px;
+    z-index: 200;
 
     display: flex;
     flex-direction: column;
