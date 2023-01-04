@@ -1,13 +1,14 @@
 import { FooterContainer, FooterContent } from "./Footer-style";
-import logoHeaderImg from "../../assets/logo_header.svg"
+import logoImg from "../../assets/logo_gray.png"
+import textImg from "../../assets/text.png"
 
 export function Footer() {
     return (
         <FooterContainer>
             <FooterContent>
                 <div>
-                    <img src={logoHeaderImg} alt="" />
-                    <p>Antônio Júnior Advocacía e consultoria jurídica</p>
+                    <img src={logoImg} alt="" />
+                    <img src={textImg} alt="" />
                 </div>
                 <nav>
                     <a href="">icon

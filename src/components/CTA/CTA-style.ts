@@ -66,6 +66,7 @@ export const Content = styled.div`
         flex-direction: column;;
         justify-content: center;
         gap: 1.5rem;
+        z-index: 200;
 
         width: 500px;
     }
