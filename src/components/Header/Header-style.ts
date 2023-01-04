@@ -24,13 +24,20 @@ export const LogoContainer = styled.div`
         gap: 0.5rem;
 
         a:last-child {
-            opacity: 0;
-            transition: opacity 1s;        
+            img {
+                opacity: 0;
+                transform: translate(-100%, 0);
+                transition: transform 0.5s, opacity 1s;    
+            }
+            overflow: hidden;    
         }
 
         &:hover {
             a:last-child {
-                opacity: 1;
+                img {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
             }
         }
 

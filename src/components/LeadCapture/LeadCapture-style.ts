@@ -11,6 +11,8 @@ export const LeadCaptureContainer = styled.section`
    background-size: cover;
    background-position: center;
 
+   margin-bottom: 12.5rem;
+
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -34,7 +36,7 @@ export const FormContainer = styled.div`
     
     position: absolute;
     top: -350px;
-    left: 108px;
+    left: 0;
     
     padding: 3rem;
     
