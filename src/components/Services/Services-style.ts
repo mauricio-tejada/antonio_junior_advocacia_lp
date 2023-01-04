@@ -6,7 +6,19 @@ export const ServicesContainer = styled.section`
     justify-content: center;
     gap: 2.5rem;
 
+    position: relative;
+
     margin-bottom: 12rem;
+
+    .branchBg {
+        position: absolute;
+        right: -25%;
+        top: -8%;
+        z-index: 100;
+
+        transform: scaleX(-1);
+        rotate: -10deg;
+    }
 `
 export const Header = styled.div`
     display: flex;
@@ -42,6 +54,7 @@ export const CardContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
 
+    z-index: 200;
     `
 
 export const ServiceCard = styled.div`
@@ -109,4 +122,5 @@ export const ServiceCard = styled.div`
 
         margin-right: 3.31rem;
     }
+
 `

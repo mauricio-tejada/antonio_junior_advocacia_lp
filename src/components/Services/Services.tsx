@@ -2,6 +2,7 @@
 import { ServiceCard, ServicesContainer, CardContainer, Header } from "./Services-style";
 import cardIconImg from "../../assets/card_icon.png"
 import arrowImg from "../../assets/arrow.png"
+import branchBgImg from "../../assets/branch_bg.png"
 
 export function Services() {
     return (
@@ -78,6 +79,9 @@ export function Services() {
                     <img className="arrow" src={arrowImg} alt="" />
                 </ServiceCard>
             </CardContainer>
+
+            <img className="branchBg" src={branchBgImg} alt="" />
+
         </ServicesContainer>
     )
 }

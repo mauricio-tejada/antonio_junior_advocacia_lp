@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
 export const CTAContainer = styled.section`
-    background-color: black;
-    width: 100%;
+    background: ${props => props.theme.gradientSection};
 
-    margin-bottom: 20rem;
+    width: 100%;
+    height: 542px;
+    position: relative;
+
+    margin-bottom: 15rem;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
     
 `
 export const Content = styled.div`
@@ -21,13 +26,53 @@ export const Content = styled.div`
     justify-content: center;
     gap: 8rem;
 
+    position: relative;
+
+    
+    .branchBg {
+        position: absolute;
+        right: -2%;
+        top: 15%;
+        z-index: 100;
+
+        transform: scaleX(-1);
+        rotate: -10deg;
+    }
+
+    h1 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 125%;
+
+        color: ${props => props.theme.gray100};
+    }
+    
+    p {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 150%;
+
+        max-width: 418px;
+
+        color: ${props => props.theme.gray300};
+    }
+
     div {
         display: flex;
         flex-direction: column;;
         justify-content: center;
-        gap: 8rem;
+        gap: 1.5rem;
 
         width: 500px;
+    }
+
+    button {
+        max-width: 195px;
+        margin-top: 1.5rem;
     }
 
     img {
