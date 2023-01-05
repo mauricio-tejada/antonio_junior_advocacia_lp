@@ -10,4 +10,6 @@ export const MainContainer = styled.main`
     overflow: hidden;
 
     background: #1C1A22;
+    
+
 `

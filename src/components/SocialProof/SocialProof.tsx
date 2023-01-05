@@ -9,7 +9,7 @@ import branchBgImg from "../../assets/social_proof_branch.png"
 export function SocialProof() {
 
     return (
-        <SocialProofContainer>
+        <SocialProofContainer id="depoimentos">
             <Content>
                 <h1>Depoimentos de nossos clientes</h1>
                 <p>Muitos clientes estão felizes em trabalhar conosco e estão apreciando nosso trabalho. </p>

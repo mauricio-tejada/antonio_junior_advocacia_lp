@@ -12,7 +12,7 @@ export function Header() {
                     <a href=""><img src={logoExtendsImg} alt="" /></a>
                 </LogoContainer>
                 <nav>
-                    <a href=""><SmallInvisibleButton>Depoimentos</SmallInvisibleButton></a>
+                    <a href="#depoimentos"><SmallInvisibleButton>Depoimentos</SmallInvisibleButton></a>
                     <a href=""><SmallInvisibleButton>Contato</SmallInvisibleButton></a>
                     <a href=""><SmallInvisibleButton>Áreas de atuação</SmallInvisibleButton></a>
                     <a href=""><SmallInvisibleButton>Home</SmallInvisibleButton></a>
