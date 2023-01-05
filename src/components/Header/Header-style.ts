@@ -27,7 +27,7 @@ export const LogoContainer = styled.div`
             img {
                 opacity: 0;
                 transform: translate(-100%, 0);
-                transition: transform 0.5s, opacity 1s;    
+                transition: transform 0.3s, opacity 0.5s;    
             }
             overflow: hidden;    
         }

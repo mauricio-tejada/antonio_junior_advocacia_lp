@@ -107,6 +107,8 @@ export const FormContainer = styled.div`
             border-radius: 6px;
             background: transparent;
 
+            transition: background-color 0.5s;
+
             &::placeholder {
                 color: ${props => props.theme.gray100};
                 font-family: 'Fira Sans';

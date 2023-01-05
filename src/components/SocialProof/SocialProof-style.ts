@@ -4,8 +4,6 @@ export const SocialProofContainer = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 7.87rem;
-
     position: relative;
     
     margin-bottom: 21rem;
@@ -44,6 +42,18 @@ export const Content = styled.div`
     button {
         max-width: 195px;
         margin-top: 1.5rem;
+    }
+`
+
+export const CardContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    transform: scale(0.75);
+
+    .currentCard {
+        transform: scale(1.5);
     }
 `
 
