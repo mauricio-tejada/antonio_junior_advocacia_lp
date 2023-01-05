@@ -19,6 +19,8 @@ export const Content = styled.div`
     width: 100%;
     max-width: 1224px;
 
+    padding: 0 2rem 0 2rem;
+
 
     display: flex;
     flex-direction: row;
@@ -26,6 +28,10 @@ export const Content = styled.div`
     gap: 8rem;
 
     position: relative;
+
+    @media (max-width: 1024px) {
+            gap: 3rem;
+        }
 
     
     .branchBg {
@@ -67,7 +73,8 @@ export const Content = styled.div`
         gap: 1.5rem;
         z-index: 200;
 
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
     }
 
     button {

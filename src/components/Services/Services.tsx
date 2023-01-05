@@ -83,7 +83,7 @@ export function Services() {
                     </div>
                     <img className="arrow" src={arrowImg} alt="" />
                 </ServiceCard>
-        </CardContainer>
+            </CardContainer>
 
             <img className="branchBg" src={branchBgImg} alt="" />
 

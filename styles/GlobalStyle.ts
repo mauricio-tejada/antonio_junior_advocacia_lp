@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     h1 {
         font-family: 'Lato';
         font-weight: 400;
-        font-size: 56px;
+        font-size: 3.5rem;
         line-height: 125%
     }
 

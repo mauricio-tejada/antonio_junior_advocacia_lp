@@ -4,7 +4,9 @@ export const ServicesContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2.5rem;
+
 
     position: relative;
 
@@ -26,6 +28,9 @@ export const ServicesContainer = styled.section`
         justify-content: center;
         align-items: center;
         gap: 1rem;
+
+        max-width: 1224px;
+        width: 100%;
 
         h2 {
             color: ${props => props.theme.gray100};
@@ -54,7 +59,25 @@ export const CardContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
 
+    max-width: 1224px;
+
     z-index: 200;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 1120px) {
+        gap: 0;
+    }
+
+    @media (max-width: 1150px) {
+        gap: 0;
+    }
     `
 
 export const ServiceCard = styled.div`
@@ -79,6 +102,13 @@ export const ServiceCard = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    @media (max-width: 1120px) {
+        transform: scale(0.90);
+        }
+    @media (max-width: 1150px) {
+        transform: scale(0.95);
+        }
 
     &:hover {
         .description {

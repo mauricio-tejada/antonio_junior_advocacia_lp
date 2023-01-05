@@ -7,6 +7,7 @@ export const SocialProofContainer = styled.section`
     position: relative;
     
     margin-bottom: 21rem;
+    padding: 0 2rem 0 2rem;
     
     width: 100%;
     max-width: 1224px;

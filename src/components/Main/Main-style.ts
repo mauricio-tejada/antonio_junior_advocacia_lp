@@ -16,8 +16,10 @@ export const SocialLinks = styled.div`
     width: 100%;
 
     position: sticky;
-    bottom: 230px;
+    bottom: 24vh;
     z-index: 1;
+
+    margin-top: -5rem;
 
 
     nav {

@@ -9,26 +9,28 @@ export function Home() {
     return(
         <HomeContainer>
 
-            <Parallax className="paralaxContainer" speed={-10}>
-                    <p>Trabalhamos em prol da</p>
-                    <strong>Justiça</strong>
-            </Parallax>
-
             <HomeContent>
                 <h1>Resolvemos seus problemas jurídicos com advogados experientes</h1>
-                <div>
-                    <p>Estamos aqui para ajudar a cuidar da sua legalidade com o melhor atendimento especialmente para você</p>
-                    <div>
-                        <a href=""><DefaultButton>Vamos começar</DefaultButton></a>
-                        <a href=""><InvisibleButton>Saber mais</InvisibleButton></a>
-                    </div>
+                <p>Estamos aqui para ajudar a cuidar da sua legalidade com o melhor atendimento especialmente para você</p>
+                <div className="buttonContainer">
+                    <a href=""><DefaultButton>Vamos começar</DefaultButton></a>
+                    <a href=""><InvisibleButton>Saber mais</InvisibleButton></a>
                 </div>
             </HomeContent>
-
-            <img className="homeBg" src={homeImg} alt="" />
+                
+            <div className="homeBg">
+                <div className="paralaxContainer" >
+                    <Parallax className="paralaxItem" speed={-10}>
+                        <p>Trabalhamos em prol da</p>
+                        <strong>Justiça</strong>
+                    </Parallax>
+                    <img src={homeImg} alt="" />
+                </div>
+            </div>
             
-            <img src={branchBgImg} alt="" />
+            <img className="branchBg" src={branchBgImg} alt="" />
 
         </HomeContainer>
     )
 }
+

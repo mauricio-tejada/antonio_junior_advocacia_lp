@@ -2,31 +2,35 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.section`
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     position: relative;
     
     width: 100%;
     max-width: 1224px;
 
-    img:last-child {
+    .branchBg {
         position: absolute;
         left: -9%;
         top: 0.15%;
     }
 
     .homeBg {
+    }
+    
+    .paralaxContainer {
         position: absolute;
         right: 10.5%;
         top: 0;
         z-index: 100;
     }
 
-    .paralaxContainer {
+    .paralaxItem {
     
     position: absolute;
     width: 396px;
     height: 139px;
-    right: -5%;
+    right: -40%;
     top: 70%;
     z-index: 200;
 
@@ -60,29 +64,32 @@ export const HomeContainer = styled.section`
         color: ${props => props.theme.gray100};
     }
 
-}
+    }
+
+    @media (max-width: 970px) {
+        /* flex-direction: column;
+        justify-content: center; */
+    }
 
     `
 export const HomeContent = styled.div`
     
-    margin: 9rem 17.4rem 0 0;
+    margin: 9rem 0 0 16%;
     z-index: 200;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6.81rem;
 
-    width: 550px;
-    height: 100%;
+    max-width: 550px;
+    max-height: 566px;
+    width: 44%; 
 
-    h1 + div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-
-        width: 350px;
+    @media (max-width: 1120px) {
+        margin: 9rem 0 0 10%;
+    }
+    @media (max-width: 1105px) {
+        margin: 9rem 0 0 7%;
     }
     
     p {
@@ -92,12 +99,27 @@ export const HomeContent = styled.div`
         line-height: 150%;
         color: #A8A8AA;
         opacity: 0.8;
+
+        max-width: 350px;
+
+        margin: 6.81rem 0 2rem 0;
     }
     
-    p + div {
+    .buttonContainer {
         display: flex;
         justify-content: space-between;
+        max-width: 350px;
 
-        
+
+        @media (max-width: 1024px) {
+            justify-content: flex-start;
+            gap: 1rem;
+        }
     }
     `
+
+
+
+
+
+
