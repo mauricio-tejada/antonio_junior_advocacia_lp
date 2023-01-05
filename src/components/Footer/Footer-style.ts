@@ -34,12 +34,23 @@ export const FooterContent = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 5rem;
+        gap: 2rem;
         padding: 2.5rem 0 2.5rem 0;
 
         a {
-            list-style-type: none;
-            text-decoration: none;
+            background: linear-gradient(${props => props.theme.gray700}, ${props => props.theme.gray700}) padding-box,
+                ${props => props.theme.gradientBorder} border-box;
+            border-radius: 8px;
+            border: 1px solid transparent;
+        
+            border-radius: 8px;
+        
+            cursor: pointer;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         } 
     }
 `

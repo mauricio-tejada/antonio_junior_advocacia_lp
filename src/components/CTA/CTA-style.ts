@@ -7,7 +7,6 @@ export const CTAContainer = styled.section`
     height: 542px;
     position: relative;
 
-    margin-bottom: 15rem;
 
     display: flex;
     flex-direction: column;

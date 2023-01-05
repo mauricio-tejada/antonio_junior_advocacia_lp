@@ -5,7 +5,10 @@ import { Home } from "../Home/Home";
 import { LeadCapture } from "../LeadCapture/LeadCapture";
 import { Services } from "../Services/Services";
 import { SocialProof } from "../SocialProof/SocialProof";
-import { MainContainer } from "./Main-style";
+import { MainContainer, SocialLinks } from "./Main-style";
+import linkedinImg from "../../assets/linkedin_icon.png"
+import faceImg from "../../assets/face_icon.png"
+import instaImg from "../../assets/insta_icon.png"
 
 export function Main() {
     return (
@@ -14,6 +17,13 @@ export function Main() {
             <Home />
             <Services />
             <CTA />
+            <SocialLinks>
+                    <nav>
+                        <a href=""><img src={linkedinImg} alt="" /></a>
+                        <a href=""><img src={faceImg} alt="" /></a>
+                        <a href=""><img src={instaImg} alt="" /></a>
+                    </nav>
+            </SocialLinks>
             <SocialProof />
             <LeadCapture />
             <Footer />

@@ -26,7 +26,6 @@ export const Content = styled.div`
     gap: 1rem;
     z-index: 200;
 
-    width: 500px;
 
     p {
         font-family: 'Fira Sans';
@@ -48,12 +47,16 @@ export const Content = styled.div`
 export const CardContainer = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-
-    transform: scale(0.75);
+    position: relative;
 
     .currentCard {
-        transform: scale(1.5);
+        transform: scale(1);
+        position: absolute;
+        z-index: 1;
+        
     }
 `
 
@@ -63,10 +66,14 @@ export const SocialProofCard = styled.div`
     align-items: center;
     justify-content: center;
 
+    transform: scale(0.70);
+
+
     background: linear-gradient(${props => props.theme.gray700}, ${props => props.theme.gray700}) padding-box,
                 ${props => props.theme.gradientBorder} border-box;
     border-radius: 8px;
     border: 1px solid transparent;
+    box-shadow: 16px 0px 48px rgba(20, 20, 21, 0.25), -16px 0px 48px rgba(20, 20, 21, 0.25);
 
 
     padding: 2rem;
