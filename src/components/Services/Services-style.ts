@@ -19,34 +19,34 @@ export const ServicesContainer = styled.section`
         transform: scaleX(-1);
         rotate: -10deg;
     }
-`
-export const Header = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
 
-    h2 {
-        color: ${props => props.theme.gray100};
-        font-family: 'Lato';
-        font-weight: 400;
-        font-size: 2.5rem;
-        line-height: 125%;
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        h2 {
+            color: ${props => props.theme.gray100};
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 125%;
+        }
+
+        p {
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 29px;
+            color: ${props => props.theme.gray200};
+            opacity: 0.8;
+            text-align: center;
+
+            max-width: 635px;
+        }
     }
-
-    p {
-        font-family: 'Lato';
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 29px;
-        color: ${props => props.theme.gray200};
-        opacity: 0.8;
-        text-align: center;
-
-        max-width: 635px;
-    }
-
 `
 
 export const CardContainer = styled.div`
@@ -69,6 +69,9 @@ export const ServiceCard = styled.div`
     padding: 1.5rem;
     border-radius: 8px;
 
+    overflow: hidden;
+    cursor: pointer;
+
     
     position: relative;
     display: flex;
@@ -76,6 +79,29 @@ export const ServiceCard = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    &:hover {
+        .description {
+            animation: toRight 0.5s;
+            transform: translate(0, 0);
+        }
+
+        .casesCount {
+            opacity: 0;
+        }
+
+        .header {
+            animation: toBottom 0.5s;
+            transform: translate(0, 0);
+        }
+
+        .arrow {
+            animation: toTop 0.5s;
+            transform: translate(0, 0);
+        }
+
+
+    }
 
     h3 {
         font-family: 'Lato';
@@ -85,20 +111,30 @@ export const ServiceCard = styled.div`
         line-height: 150%;
     }
 
-    p {
+    .description {
         font-family: 'Fira Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
 
-        color: ${props => props.theme.gray300}
-    }
+        color: ${props => props.theme.gray300};
 
-    p:last-child {
+        transform: translate(-120%, 0);
+        transition: transform 0.5s;
+    }
+    
+    .casesCount {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
         font-size: 0.75rem;
+        line-height: 150%;
+        
+        color: ${props => props.theme.gray500};
+        transition: opacity 0.3s;
     }
-
+    
     .contentContainer {
         display: flex;
         flex-direction: column;
@@ -111,6 +147,9 @@ export const ServiceCard = styled.div`
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
+        
+        transform: translate(-50%, 50%);
+        transition: transform 0.5s;
     }
 
     .header {
@@ -121,6 +160,26 @@ export const ServiceCard = styled.div`
         gap: 1rem;
 
         margin-right: 3.31rem;
+        transform: translate(0, 200%);
+        transition: transform 0.5s;
     }
-
-`
+    
+    
+        @keyframes toRight {
+            0% {transform: translate(-120%, 0);}
+            50% {transform: translate(10%, 0);}
+            100% {transform: translate(0, 0);}
+        }
+    
+        @keyframes toBottom {
+            0% {transform: translate(0, 200%);}
+            50% {transform: translate(0, -20%);}
+            100% {transform: translate(0, 0);}
+        }
+    
+        @keyframes toTop{
+            0% {transform: translate(-50%, 50%);}
+            50% {transform: translate(20%, -20%);}
+            100% {transform: translate(0, 0);}
+        }
+    `
