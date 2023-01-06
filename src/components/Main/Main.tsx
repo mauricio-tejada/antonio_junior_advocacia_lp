@@ -5,10 +5,11 @@ import { Home } from "../Home/Home";
 import { LeadCapture } from "../LeadCapture/LeadCapture";
 import { Services } from "../Services/Services";
 import { SocialProof } from "../SocialProof/SocialProof";
-import { MainContainer, SocialLinks } from "./Main-style";
+import { ChatPopup, MainContainer, SocialLinks } from "./Main-style";
 import linkedinImg from "../../assets/linkedin_icon.png"
 import faceImg from "../../assets/face_icon.png"
 import instaImg from "../../assets/insta_icon.png"
+import wppImg from "../../assets/wpp-icon.png"
 
 export function Main() {
     return (
@@ -24,6 +25,9 @@ export function Main() {
                         <a href=""><img src={instaImg} alt="" /></a>
                     </nav>
             </SocialLinks>
+            <ChatPopup>
+                <img src={wppImg} alt="" />
+            </ChatPopup>
             <SocialProof />
             <LeadCapture />
             <Footer />

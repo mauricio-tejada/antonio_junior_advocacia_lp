@@ -11,7 +11,10 @@ export function Footer() {
             <FooterContent>
                 <div>
                     <img src={logoImg} alt="" />
-                    <img src={textImg} alt="" />
+                    <div>
+                        <p>Antônio Júnior ©</p>
+                        <p>Advocacia e consultoria jurídica</p>
+                    </div>
                 </div>
                 <nav>
                         <a href=""><img src={linkedinImg} alt="" /></a>
