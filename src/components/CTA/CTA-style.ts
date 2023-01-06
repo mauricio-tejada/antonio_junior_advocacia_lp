@@ -4,7 +4,6 @@ export const CTAContainer = styled.section`
     background: ${props => props.theme.gradientSection};
 
     width: 100%;
-    height: 542px;
     position: relative;
 
 
@@ -30,8 +29,47 @@ export const Content = styled.div`
     position: relative;
 
     @media (max-width: 1024px) {
-            gap: 3rem;
+        gap: 3rem;
+        
+        h1 {
+            font-size: 3rem !important;
         }
+    }
+    @media (max-width: 940px) {
+        img:first-child {
+        width: 309.5px;
+        }
+    }
+
+    @media (max-width: 670px) {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem !important;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        img:first-child {
+            margin-top: 0;
+        }
+
+        div {
+            align-items: center;
+            padding-top: 2rem;
+
+            button {
+                width: 100%;
+                max-width: 428px;
+            }
+        }
+    }
 
     
     .branchBg {
