@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: #1C1A22;
         color: #fff;
+
+        overflow-x: hidden;
     }
 
     html {

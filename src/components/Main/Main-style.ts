@@ -21,6 +21,10 @@ export const SocialLinks = styled.div`
 
     margin-top: -5rem;
 
+    @media (max-width: 820px) {
+        display: none;
+    }
+
 
     nav {
         display: flex;
@@ -44,5 +48,31 @@ export const SocialLinks = styled.div`
             justify-content: center;
             align-items: center;
         }
+    }
+`
+
+export const ChatPopup = styled.a`
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 300;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 54px;
+
+    width: 64px;
+    height: 64px;
+
+    background: ${props => props.theme.gradientBorder};
+    filter: drop-shadow(29px 4px 56px rgba(20, 20, 21, 0.25));
+    backdrop-filter: blur(12px);
+
+    backdrop-filter: blur(8px);
+
+    @media (max-width: 820px) {
+        display: block;
     }
 `

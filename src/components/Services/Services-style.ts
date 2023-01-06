@@ -6,6 +6,8 @@ export const ServicesContainer = styled.section`
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    width: 100%;
+    padding: 0 1.5rem 0 1.5rem;
 
 
     position: relative;
@@ -38,6 +40,12 @@ export const ServicesContainer = styled.section`
             font-weight: 400;
             font-size: 2.5rem;
             line-height: 125%;
+            text-align: center;
+
+            @media (max-width: 580px) {
+            font-size: 1.5rem;
+            }
+
         }
 
         p {
@@ -52,6 +60,7 @@ export const ServicesContainer = styled.section`
             max-width: 635px;
         }
     }
+
 `
 
 export const CardContainer = styled.div`
@@ -62,21 +71,21 @@ export const CardContainer = styled.div`
     max-width: 1224px;
 
     z-index: 200;
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+    
+    @media (max-width: 1150px) {
+        gap: 0;
     }
-
-    @media (max-width: 992px) {
-        grid-template-columns: 1fr 1fr;
-    }
-
     @media (max-width: 1120px) {
         gap: 0;
     }
-
-    @media (max-width: 1150px) {
-        gap: 0;
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 580px) {
+        grid-template-columns: 1fr;
     }
     `
 

@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
     width: 100%;
-    max-height: 100px;
 
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.5rem 0 1.5rem;
 
     background: linear-gradient(${props => props.theme.gray800}, ${props => props.theme.gray800}) padding-box,
                 ${props => props.theme.gradientBorder} border-box;
@@ -27,7 +26,23 @@ export const FooterContent = styled.div`
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 2.5rem;
+        gap: 0.5rem;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        p {
+            font-family: 'Fira Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 150%;
+
+            color: ${props => props.theme.gray500};
+        }
     }
     
     nav {
@@ -53,4 +68,23 @@ export const FooterContent = styled.div`
             align-items: center;
         } 
     }
+
+    @media (max-width: 820px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 0 0 0;
+        
+        div {
+            flex-direction: column;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            div {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+        }
+    }
+
 `
