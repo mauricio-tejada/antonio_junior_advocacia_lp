@@ -5,6 +5,8 @@ export const SocialProofContainer = styled.section`
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+
+    z-index: 200;
     
     margin-bottom: 21rem;
     padding: 0 2rem 0 2rem;
@@ -18,6 +20,39 @@ export const SocialProofContainer = styled.section`
         top: -120%;
         
         z-index: 100;
+    }
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+
+        button {
+            align-self: center;
+            width: 100%;
+            max-width: 312px !important;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+
+        h1 ~ p {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 670px) {
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    @media (max-width: 470px) {
+
+        h1 ~ p {
+            text-align: left;
+        }
     }
 `
 export const Content = styled.div`
@@ -43,6 +78,10 @@ export const Content = styled.div`
         max-width: 195px;
         margin-top: 1.5rem;
     }
+
+    @media (max-width: 1200px) {
+        align-items: center;
+    }
 `
 
 export const CardContainer = styled.div`
@@ -50,14 +89,29 @@ export const CardContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 60%;
     position: relative;
 
     .currentCard {
-        transform: scale(1);
+        transform: scale(1.3);
         position: absolute;
         z-index: 1;
-        
+    }
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+    @media (max-width: 670px) {
+        flex-direction: column;
+
+        gap: 2rem;
+        width: 100%;
+
+        .currentCard {
+            position: static;
+            transform: scale(1);
+            z-index: 0;
+        }
     }
 `
 
@@ -67,7 +121,7 @@ export const SocialProofCard = styled.div`
     align-items: center;
     justify-content: center;
 
-    transform: scale(0.70);
+    transform: scale(1);
 
 
     background: linear-gradient(${props => props.theme.gray700}, ${props => props.theme.gray700}) padding-box,
@@ -114,4 +168,6 @@ export const SocialProofCard = styled.div`
         color: ${props => props.theme.gray300};
 
     }
+
+
 `

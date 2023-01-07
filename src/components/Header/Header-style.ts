@@ -56,7 +56,7 @@ export const HeaderContent = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    padding: 1.75rem 1.5rem;  
+    padding: 1.75rem 0;  
 
     max-width: 1224px;
     margin: 0 auto;
@@ -73,6 +73,7 @@ export const HeaderContent = styled.div`
     }
 
     @media (max-width: 950px) {
+        padding: 1.75rem 1.5rem;  
         nav {
             display: none;
         }
