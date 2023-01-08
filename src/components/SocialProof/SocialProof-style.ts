@@ -5,8 +5,6 @@ export const SocialProofContainer = styled.section`
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-
-    z-index: 200;
     
     margin-bottom: 21rem;
     padding: 0 2rem 0 2rem;
@@ -18,8 +16,6 @@ export const SocialProofContainer = styled.section`
         position: absolute;
         left: -8%;
         top: -120%;
-        
-        z-index: 100;
     }
 
     @media (max-width: 1200px) {
@@ -60,7 +56,6 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    z-index: 200;
 
 
     p {
@@ -111,6 +106,10 @@ export const CardContainer = styled.div`
             position: static;
             transform: scale(1);
             z-index: 0;
+
+            @media(max-width: 400px) {
+        transform: scale(0.9);
+    }
         }
     }
 `
@@ -136,6 +135,10 @@ export const SocialProofCard = styled.div`
 
     width: 24.43rem;
     height: 16.75rem;
+
+    @media(max-width: 400px) {
+        transform: scale(0.9);
+    }
 
     .header {
         display: flex;

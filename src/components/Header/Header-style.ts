@@ -4,10 +4,10 @@ export const HeaderContainer = styled.header`
     width: 100%;
     max-height: 100px;
 
-    z-index: 300;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 
     padding: 0 1rem 0 1rem;
 

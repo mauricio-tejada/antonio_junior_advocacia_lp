@@ -18,7 +18,6 @@ export const ServicesContainer = styled.section`
         position: absolute;
         right: -25%;
         top: -8%;
-        z-index: 100;
 
         transform: scaleX(-1);
         rotate: -10deg;
@@ -70,7 +69,6 @@ export const CardContainer = styled.div`
 
     max-width: 1224px;
 
-    z-index: 200;
     
     @media (max-width: 1150px) {
         gap: 0;

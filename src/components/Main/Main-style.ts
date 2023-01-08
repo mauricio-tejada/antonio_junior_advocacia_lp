@@ -14,10 +14,10 @@ export const SocialLinks = styled.div`
 
     max-width: 1224px;
     width: 100%;
+    z-index: 3;
 
     position: sticky;
     bottom: 24vh;
-    z-index: 1;
 
     margin-top: -5rem;
 
@@ -55,7 +55,8 @@ export const ChatPopup = styled.a`
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    z-index: 300;
+    z-index: 3;
+
 
     display: none;
     justify-content: center;

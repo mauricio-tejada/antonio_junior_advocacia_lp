@@ -10,11 +10,13 @@ import linkedinImg from "../../assets/linkedin_icon.png"
 import faceImg from "../../assets/face_icon.png"
 import instaImg from "../../assets/insta_icon.png"
 import wppImg from "../../assets/wpp-icon.png"
+import { Sidebar } from "../Sidebar/Sidebar";
 
 export function Main() {
     return (
         <MainContainer>
             <Header />
+            <Sidebar />
             <Home />
             <Services />
             <CTA />

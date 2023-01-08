@@ -76,7 +76,6 @@ export const Content = styled.div`
         position: absolute;
         right: -2%;
         top: 15%;
-        z-index: 100;
 
         transform: scaleX(-1);
         rotate: -10deg;
@@ -109,7 +108,6 @@ export const Content = styled.div`
         flex-direction: column;;
         justify-content: center;
         gap: 1.5rem;
-        z-index: 200;
 
         max-width: 500px;
         width: 100%;

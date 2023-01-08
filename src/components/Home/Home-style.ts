@@ -22,7 +22,6 @@ export const HomeContainer = styled.section`
         position: absolute;
         right: 10.5%;
         top: 0;
-        z-index: 100;
     }
 
     .paralaxItem {
@@ -32,7 +31,6 @@ export const HomeContainer = styled.section`
     height: 139px;
     right: -40%;
     top: 70%;
-    z-index: 200;
 
     display: flex;
     flex-direction: column;
@@ -75,11 +73,11 @@ export const HomeContainer = styled.section`
 export const HomeContent = styled.div`
     
     margin: 9rem 0 0 16%;
-    z-index: 200;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 
     max-width: 550px;
     max-height: 566px;
