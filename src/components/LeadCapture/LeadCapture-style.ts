@@ -4,7 +4,6 @@ import formBgImg from "../../assets/form_bg.svg"
 export const LeadCaptureContainer = styled.section`
    width: 100%;
    height: 542px;
-   position: relative;
 
    background-image: url(${formBgImg});
    background-repeat: no-repeat;
@@ -24,19 +23,20 @@ export const Content = styled.div`
     width: 100%;
     max-width: 1224px;
 
-    position: relative;
+    padding: 0 2rem 0 2rem;
+
+    @media (max-width: 400px) {
+        padding: 0 1rem 0 1rem;
+
+    }
 `
 
 export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-    
-    position: absolute;
-    top: -350px;
-    left: 0;
     
     padding: 3rem;
     
@@ -45,8 +45,10 @@ export const FormContainer = styled.div`
     backdrop-filter: blur(12px);
     border-radius: 8px;
     
-    width: 44rem;
+    width: 100%;
+    max-width: 44rem;
     height:42.37rem;
+
     
     h2 {
         font-family: 'Lato';
@@ -56,10 +58,13 @@ export const FormContainer = styled.div`
         line-height: 125%;
     
         color: ${props => props.theme.gray100};
+
+        @media (max-width: 700px) {
+            font-size: 1.5rem;
+            }
     }
 
     p {
-        text-align: center;
 
         font-family: 'Fira Sans';
         font-style: normal;
@@ -71,6 +76,7 @@ export const FormContainer = styled.div`
 
     }
     
+
     form {
         display: flex;
         flex-direction: column;
@@ -82,6 +88,9 @@ export const FormContainer = styled.div`
 
         margin-top: 3.5rem;
 
+        @media (max-width: 700px) {
+                gap: 1rem;
+            }
 
         div {
             display: flex;
@@ -91,7 +100,11 @@ export const FormContainer = styled.div`
             flex: 1;
             gap: 1rem;
             width: 100%;
-        }
+
+            @media (max-width: 700px) {
+                flex-direction: column;
+            }
+            }
 
         input, textarea {
             display: flex;
@@ -137,7 +150,8 @@ export const FormContainer = styled.div`
         }
 
         button {
-            max-width: 237px;
+            width: 100%;
+            max-width: 280px;
         }
     }
 `
