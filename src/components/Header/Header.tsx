@@ -18,10 +18,6 @@ export function Header() {
                     <a href=""><SmallInvisibleButton>Home</SmallInvisibleButton></a>
                     <a href=""><SmallOutlineButton>Entrar em contato</SmallOutlineButton></a>
                 </nav>
-                <div className="closeIcon">
-                    <div className="bar1"> </div>
-                    <div className="bar2"> </div>
-                </div>
             </HeaderContent>
         </HeaderContainer>
     )
