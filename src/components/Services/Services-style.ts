@@ -90,7 +90,7 @@ export const CardContainer = styled.div`
 export const ServiceCard = styled.div`
     width: 20.18rem;
     height: 15.12rem;
-    z-index: 4;
+    z-index: 1;
 
     background: linear-gradient(${props => props.theme.gray700}, ${props => props.theme.gray700}) padding-box,
                 ${props => props.theme.gradientBorder} border-box;
