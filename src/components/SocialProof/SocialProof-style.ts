@@ -56,6 +56,7 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
+    z-index: 3;
 
 
     p {

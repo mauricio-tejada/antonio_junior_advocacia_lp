@@ -6,6 +6,8 @@ export const SidebarContainer = styled.aside`
     justify-content: space-between;
     align-items: flex-start;
 
+    //display: none;
+
     background: ${props => props.theme.primaryDark};
 
     width: 100%;
@@ -92,37 +94,6 @@ export const SidebarContainer = styled.aside`
         align-items: center;
 
         width: 100%;
-
-        .closeIcon {
-            width: 24px;
-            height: 24px;
-            position: relative;
-
-            cursor: pointer;
-
-            .bar1 {
-                position: absolute;
-                top: 10px;
-
-                background: #fff;
-                transform: rotate(45deg);
-
-                width: 18px;
-                height: 2px;
-
-
-            }
-            .bar2 {
-                position: absolute;
-                top: 10px;
-
-                background: #fff;
-                transform: rotate(-45deg);
-
-                width: 18px;
-                height: 2px;
-            }
-        }
     }
 
 `

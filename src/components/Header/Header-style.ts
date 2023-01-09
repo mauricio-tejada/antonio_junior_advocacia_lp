@@ -55,11 +55,45 @@ export const HeaderContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     padding: 1.75rem 0;  
 
     max-width: 1224px;
     margin: 0 auto;
+
+    .closeIcon {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            z-index: 6;
+            display: none;
+
+            cursor: pointer;
+
+            .bar1 {
+                position: absolute;
+                top: 10px;
+
+                background: #fff;
+                transform: rotate(45deg);
+
+                width: 18px;
+                height: 2px;
+
+
+            }
+            .bar2 {
+                position: absolute;
+                top: 10px;
+
+                background: #fff;
+                transform: rotate(-45deg);
+
+                width: 18px;
+                height: 2px;
+            }
+        }
     
     nav {
         display: flex;
@@ -78,7 +112,7 @@ export const HeaderContent = styled.div`
             display: none;
         }
 
-        nav ~ a {
+        .closeIcon {
         display: block;
         }
     }

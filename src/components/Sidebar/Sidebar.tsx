@@ -9,10 +9,6 @@ export function Sidebar() {
         <SidebarContainer>
             <header>
                 <p>Menu</p>
-                <div className="closeIcon">
-                    <div className="bar1"> </div>
-                    <div className="bar2"> </div>
-                </div>
             </header>
             <nav>
                 <a href="">Depoimentos</a>

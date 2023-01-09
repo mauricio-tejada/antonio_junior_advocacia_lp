@@ -1,7 +1,6 @@
 import { HeaderContainer, HeaderContent, LogoContainer } from "./Header-style";
 import logoSmallImg from "../../assets/logo_small.png"
 import logoExtendsImg from "../../assets/logo_extends.png"
-import hambImg from "../../assets/hamb.png"
 import { SmallInvisibleButton, SmallOutlineButton } from "../Buttons/Buttons-style";
 
 export function Header() {
@@ -19,7 +18,10 @@ export function Header() {
                     <a href=""><SmallInvisibleButton>Home</SmallInvisibleButton></a>
                     <a href=""><SmallOutlineButton>Entrar em contato</SmallOutlineButton></a>
                 </nav>
-                <a href=""><img src={hambImg} alt="" /></a>
+                <div className="closeIcon">
+                    <div className="bar1"> </div>
+                    <div className="bar2"> </div>
+                </div>
             </HeaderContent>
         </HeaderContainer>
     )
