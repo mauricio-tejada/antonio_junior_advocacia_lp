@@ -1,21 +1,38 @@
 import styled from "styled-components"
 
-export const SidebarContainer = styled.aside`
+export const SidebarButton = styled.img`
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 7;
+
+
+    @media(min-width: 950px) {
+        display: none;
+    }
+
+`
+
+export const SidebarContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 
-    //display: none;
-
     background: ${props => props.theme.primaryDark};
+
+    transition: display 5s;
 
     width: 100%;
     height: 100vh;
     max-height: 750px;
     padding: 2rem;
 
-    z-index: 5;
+    z-index: 6;
 
     a {
         font-family: 'Lato';
@@ -85,15 +102,6 @@ export const SidebarContainer = styled.aside`
 
             color: ${props => props.theme.gray050};
         }
-    }
-
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        width: 100%;
     }
 
 `
