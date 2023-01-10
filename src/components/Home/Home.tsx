@@ -24,7 +24,7 @@ export function Home() {
                         <p>Trabalhamos em prol da</p>
                         <strong>Justiça</strong>
                     </Parallax>
-                    <img src={homeImg} alt="" />
+                    <img className="parallaxImg" src={homeImg} alt="" />
                 </div>
             </div>
             

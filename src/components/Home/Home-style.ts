@@ -9,13 +9,12 @@ export const HomeContainer = styled.section`
     width: 100%;
     max-width: 1224px;
 
+    padding: 0 2rem 0 2rem;
+
     .branchBg {
         position: absolute;
         left: -9%;
         top: 0.15%;
-    }
-
-    .homeBg {
     }
     
     .paralaxContainer {
@@ -64,9 +63,75 @@ export const HomeContainer = styled.section`
 
     }
 
-    @media (max-width: 970px) {
-        /* flex-direction: column;
-        justify-content: center; */
+    @media (max-width: 1024px) {
+
+        .parallaxImg {
+            width: 400px;
+        }
+
+        .paralaxContainer {
+            right: 5%;
+
+            .paralaxItem {
+                right: -35%;
+                top: 60%;
+            }
+        }
+    }
+
+    @media (max-width: 850px) {
+
+        .parallaxImg {
+            width: 350px;
+        }
+
+        .paralaxContainer {
+            top: 10%;
+        }
+    }
+
+    @media (max-width: 821px) {
+
+        .parallaxImg {
+            width: 311px;
+        }
+
+        .paralaxContainer {
+            top: 10%;
+
+            .paralaxItem {
+                width: 273px;
+                height: 96px;
+                padding: 1.37rem;
+                gap: 5.5px;
+
+                p {
+                    
+                    font-size: 1rem;
+                    line-height: 20px;
+                }
+
+                strong {
+                    font-size: 1.37rem;
+                    line-height: 1.32rem;
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+
+        .homeBg {
+            display: flex;
+            justify-content: center;
+        }
+
+        .paralaxContainer {
+            position: relative;
+            margin-top: 2rem;
+            right: 0;
+        }
     }
 
     `
@@ -83,12 +148,6 @@ export const HomeContent = styled.div`
     max-height: 566px;
     width: 44%; 
 
-    @media (max-width: 1120px) {
-        margin: 9rem 0 0 10%;
-    }
-    @media (max-width: 1105px) {
-        margin: 9rem 0 0 7%;
-    }
     
     p {
         font-family: 'Fira Sans';
@@ -98,22 +157,92 @@ export const HomeContent = styled.div`
         color: #A8A8AA;
         opacity: 0.8;
 
+        width: 100%;
         max-width: 350px;
-
+        
         margin: 6.81rem 0 2rem 0;
+        padding: 0 1.5rem 0 0;
     }
     
     .buttonContainer {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 1rem;
+        
+        width: 90%;
         max-width: 350px;
-
-
-        @media (max-width: 1024px) {
-            justify-content: flex-start;
-            gap: 1rem;
-        }
     }
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 1120px) {
+            margin: 9rem 0 0 10%;
+        }
+
+        @media (max-width: 1105px) {
+            margin: 9rem 0 0 0%;
+        }
+
+        @media (max-width: 895px) {
+            margin: 6rem 0 0 7%;
+        }
+
+        @media (max-width: 821px) {
+            margin: 7rem 0 0 0%;
+
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1.125rem;
+            }
+
+            .buttonContainer {
+                flex-direction: column;
+            gap: 1rem;
+            
+            button {
+                width: 90%;
+            }
+            }
+        }
+
+        @media (max-width: 600px) {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            gap: 2rem; 
+
+            p {
+                max-width: 100%;
+                
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+            }
+
+            .buttonContainer {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+                max-width: 100%;
+
+                a {
+                    width: 100%;
+                    max-width: 306px;
+                }
+
+                button {
+                width: 100%;
+                max-width: 100%;
+                }
+
+            }
+        }
     `
 
 
