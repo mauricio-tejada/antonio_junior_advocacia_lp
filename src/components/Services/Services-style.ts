@@ -60,6 +60,10 @@ export const ServicesContainer = styled.section`
         }
     }
 
+    @media (max-width: 580px) {
+        margin-bottom: 2rem;
+    }
+
 `
 
 export const CardContainer = styled.div`

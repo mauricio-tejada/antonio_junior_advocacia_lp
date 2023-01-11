@@ -45,6 +45,8 @@ export const SocialProofContainer = styled.section`
         }
     }
     @media (max-width: 470px) {
+        margin-bottom: 2rem;
+
 
         h1 ~ p {
             text-align: left;
