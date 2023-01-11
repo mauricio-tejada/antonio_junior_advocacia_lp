@@ -3,7 +3,7 @@ import { Content, FormContainer, LeadCaptureContainer } from "./LeadCapture-styl
 
 export function LeadCapture() {
     return (
-        <LeadCaptureContainer>
+        <LeadCaptureContainer id="contato">
             <Content>
                 <FormContainer>
                     <h2>Realize sua consulta sem custo</h2>

@@ -13,10 +13,10 @@ export function Header() {
                 </LogoContainer>
                 <nav>
                     <a href="#depoimentos"><SmallInvisibleButton>Depoimentos</SmallInvisibleButton></a>
-                    <a href=""><SmallInvisibleButton>Contato</SmallInvisibleButton></a>
-                    <a href=""><SmallInvisibleButton>Áreas de atuação</SmallInvisibleButton></a>
-                    <a href=""><SmallInvisibleButton>Home</SmallInvisibleButton></a>
-                    <a href=""><SmallOutlineButton>Entrar em contato</SmallOutlineButton></a>
+                    <a href="#contato"><SmallInvisibleButton>Contato</SmallInvisibleButton></a>
+                    <a href="#services"><SmallInvisibleButton>Áreas de atuação</SmallInvisibleButton></a>
+                    <a href="#home"><SmallInvisibleButton>Home</SmallInvisibleButton></a>
+                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=55051991276728" target="_blank"><SmallOutlineButton>Entrar em contato</SmallOutlineButton></a>
                 </nav>
             </HeaderContent>
         </HeaderContainer>

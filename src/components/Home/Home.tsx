@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 export function Home() {
     return(
-        <HomeContainer>
+        <HomeContainer id="home">
 
             <HomeContent>
                 <h1>Resolvemos seus problemas jurídicos com advogados experientes</h1>

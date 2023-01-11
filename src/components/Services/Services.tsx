@@ -11,7 +11,7 @@ import cardIconImg6 from "../../assets/card_icon_6.png"
 
 export function Services() {
     return (
-        <ServicesContainer>
+        <ServicesContainer id="services">
             <div className="headerContainer">
                 <h2>Nossas áreas de atuação</h2>
                 <p>Tratamos cada trabalho de forma abrangente e acreditamos na força da comunicação clara e fácil.</p>

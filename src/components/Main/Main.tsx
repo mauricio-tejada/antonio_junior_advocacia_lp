@@ -29,7 +29,7 @@ export function Main() {
                 </nav>
             </SocialLinks>
             <ChatPopup>
-                <img src={wppImg} alt="" />
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=55051991276728" target="_blank"><img src={wppImg} alt="" /></a>
             </ChatPopup>
             <SocialProof />
             <LeadCapture />
