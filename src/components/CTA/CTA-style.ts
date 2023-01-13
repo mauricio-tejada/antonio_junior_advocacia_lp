@@ -1,77 +1,27 @@
 import styled from "styled-components";
 
 export const CTAContainer = styled.section`
-    background: ${props => props.theme.gradientSection};
-
-    width: 100%;
-    position: relative;
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     
+    width: 100%;
+    position: relative;
+
+    background: ${props => props.theme.gradientSection};
 `
 export const Content = styled.div`
-    width: 100%;
-    max-width: 1224px;
-
-    padding: 0 2rem 0 2rem;
-
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 8rem;
 
     position: relative;
+    width: 100%;
+    max-width: 1224px;
 
-    @media (max-width: 1024px) {
-        gap: 3rem;
-        
-        h1 {
-            font-size: 3rem !important;
-        }
-    }
-    @media (max-width: 940px) {
-        img:first-child {
-        width: 309.5px;
-        }
-    }
-
-    @media (max-width: 670px) {
-
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-            font-size: 2rem !important;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-
-        img:first-child {
-            margin-top: 0;
-            z-index: 1;
-        }
-
-        div {
-            align-items: center;
-            padding-top: 2rem;
-
-            button {
-                width: 100%;
-                max-width: 428px;
-            }
-        }
-    }
-
+    padding: 0 2rem 0 2rem;
     
     .branchBg {
         position: absolute;
@@ -123,5 +73,50 @@ export const Content = styled.div`
 
     img {
         margin-top: -4.25rem;
+    }
+
+    @media (max-width: 1024px) {
+        gap: 3rem;
+        
+        h1 {
+            font-size: 3rem !important;
+        }
+    }
+    
+    @media (max-width: 940px) {
+        img:first-child {
+        width: 309.5px;
+        }
+    }
+
+    @media (max-width: 670px) {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem !important;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        img:first-child {
+            margin-top: 0;
+            z-index: 1;
+        }
+
+        div {
+            align-items: center;
+            padding-top: 2rem;
+
+            button {
+                width: 100%;
+                max-width: 428px;
+            }
+        }
     }
 `

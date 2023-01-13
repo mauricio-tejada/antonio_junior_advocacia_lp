@@ -17,9 +17,9 @@ export function Footer() {
                     </div>
                 </div>
                 <nav>
-                        <a href=""><img src={linkedinImg} alt="" /></a>
-                        <a href=""><img src={faceImg} alt="" /></a>
-                        <a href=""><img src={instaImg} alt="" /></a>
+                    <a href=""><img src={linkedinImg} alt="" /></a>
+                    <a href=""><img src={faceImg} alt="" /></a>
+                    <a href=""><img src={instaImg} alt="" /></a>
                 </nav>
             </FooterContent>
         </FooterContainer>
