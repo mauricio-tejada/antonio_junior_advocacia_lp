@@ -18,7 +18,7 @@ export const SocialProofContainer = styled.section`
         top: -120%;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
         align-items: center;
         gap: 5rem;
@@ -77,13 +77,29 @@ export const Content = styled.div`
         max-width: 392px;
     }
 
+    a {
+        display: flex;
+        justify-content: flex-start;
+    }
+
     button {
         max-width: 195px;
         margin-top: 1.5rem;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1024px) {
         align-items: center;
+    }
+    @media (max-width: 1024px) {
+        a {
+            justify-content: center;
+            max-width: 100%;
+            width: 100%;
+        }
+        button {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 `
 
@@ -96,7 +112,7 @@ export const CardContainer = styled.div`
     position: relative;
 
     .currentCard {
-        transform: scale(1.3);
+        transform: scale(1);
         position: absolute;
         z-index: 1;
     }
@@ -112,12 +128,7 @@ export const CardContainer = styled.div`
 
         .currentCard {
             position: static;
-            transform: scale(1);
             z-index: 0;
-
-            @media(max-width: 400px) {
-        transform: scale(0.9);
-    }
         }
     }
 `
@@ -128,7 +139,7 @@ export const SocialProofCard = styled.div`
     align-items: center;
     justify-content: center;
 
-    transform: scale(1);
+    transform: scale(0.7);
 
 
     background: linear-gradient(${props => props.theme.gray700}, ${props => props.theme.gray700}) padding-box,
@@ -144,41 +155,41 @@ export const SocialProofCard = styled.div`
     width: 24.43rem;
     height: 16.75rem;
 
-    @media(max-width: 400px) {
-        transform: scale(0.9);
-    }
-
+    
     .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-self: center;
-
+        
         width: 100%;
-
+        
         .name {
             align-self: center;
-
+            
             font-family: 'Lato';
             font-style: normal;
             font-weight: 700;
             font-size: 1rem;
             line-height: 150%;
-
+            
             color: ${props => props.theme.gray050};
         }
     }
-
+    
     .content {
         font-family: 'Fira Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
-
+        
         color: ${props => props.theme.gray300};
-
+        
     }
-
+    
+    @media(max-width: 670px) {
+        transform: scale(1);
+    }
 
 `
