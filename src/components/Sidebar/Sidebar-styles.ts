@@ -17,6 +17,7 @@ export const SidebarButton = styled.img`
 
 `
 
+
 export const SidebarContent = styled.div`
     display: flex;
     flex-direction: column;
