@@ -21,7 +21,7 @@ export const Content = styled.div`
     width: 100%;
     max-width: 1224px;
 
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem 0 3.5rem;
     
     .branchBg {
         position: absolute;

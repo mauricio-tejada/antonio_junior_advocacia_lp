@@ -16,9 +16,9 @@ export const SocialLinks = styled.div`
     width: 100%;
     
     position: sticky;
-    bottom: 24vh;
+    bottom: 200px;
 
-    margin-top: -5rem;
+    margin: -15rem 0 0 1rem;
     
     @media (max-width: 820px) {
         display: none;
