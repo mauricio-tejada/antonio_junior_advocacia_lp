@@ -7,7 +7,7 @@ export const SocialProofContainer = styled.section`
     position: relative;
     
     margin-bottom: 21rem;
-    padding: 0 2rem 0 2rem;
+    padding: 6.5rem 2rem 0 2rem;
     
     width: 100%;
     max-width: 1224px;
@@ -22,6 +22,11 @@ export const SocialProofContainer = styled.section`
         flex-direction: column;
         align-items: center;
         gap: 5rem;
+
+        
+        .branchImg {
+            display: none;
+        }
 
         button {
             align-self: center;

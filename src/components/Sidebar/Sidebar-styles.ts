@@ -22,15 +22,13 @@ export const SidebarContent = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 140px;
 
     background: ${props => props.theme.primaryDark};
 
     transition: display 5s;
 
     width: 100%;
-    max-height: 100%;
-    max-height: 750px;
+    height: 100%;
     padding: 2rem;
 
     z-index: 6;

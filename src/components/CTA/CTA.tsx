@@ -13,7 +13,9 @@ export function CTA() {
                 <div>
                     <h1>Sua justiça é a nossa prioridade</h1>
                     <p>Garantimos a defesa de seus direitos e podemos ajudá-lo a encontrar a solução ideal para o seu problema. Entre em contato conosco para obter mais informações.</p>
-                    <DefaultButton>Entrar em contato</DefaultButton>
+                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=55000000000000" target="_blank">
+                        <DefaultButton>Entrar em contato</DefaultButton>
+                    </a>
                 </div>
             <img className="branchBg" src={branchBgImg} alt="" />
             </Content>

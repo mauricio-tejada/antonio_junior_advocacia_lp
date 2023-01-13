@@ -7,7 +7,7 @@ export const ServicesContainer = styled.section`
     align-items: center;
     gap: 2.5rem;
     width: 100%;
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 100px 1.5rem 0 1.5rem;
 
 
     position: relative;
@@ -122,7 +122,7 @@ export const ServiceCard = styled.div`
         transform: scale(0.95);
         }
 
-    &:hover {
+    &:hover, &:active {
         .description {
             animation: toRight 0.5s;
             transform: translate(0, 0);

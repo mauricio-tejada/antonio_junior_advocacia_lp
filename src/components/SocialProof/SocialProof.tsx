@@ -13,7 +13,9 @@ export function SocialProof() {
             <Content>
                 <h1>Depoimentos de nossos clientes</h1>
                 <p>Muitos clientes estão felizes em trabalhar conosco e estão apreciando nosso trabalho. </p>
-                <DefaultButton>Fale conosco</DefaultButton>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=55000000000000" target="_blank">
+                    <DefaultButton>Fale conosco</DefaultButton>
+                </a>
             </Content>
             <CardContainer>
                 <SocialProofCard>

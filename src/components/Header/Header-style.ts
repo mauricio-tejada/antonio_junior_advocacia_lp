@@ -4,10 +4,10 @@ export const HeaderContainer = styled.header`
     width: 100%;
     max-height: 100px;
 
+    z-index: 6;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
 
     padding: 0 1rem 0 1rem;
 
@@ -55,45 +55,11 @@ export const HeaderContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 
     padding: 1.75rem 0;  
 
     max-width: 1224px;
     margin: 0 auto;
-
-    .closeIcon {
-            width: 24px;
-            height: 24px;
-            position: relative;
-            z-index: 6;
-            display: none;
-
-            cursor: pointer;
-
-            .bar1 {
-                position: absolute;
-                top: 10px;
-
-                background: #fff;
-                transform: rotate(45deg);
-
-                width: 18px;
-                height: 2px;
-
-
-            }
-            .bar2 {
-                position: absolute;
-                top: 10px;
-
-                background: #fff;
-                transform: rotate(-45deg);
-
-                width: 18px;
-                height: 2px;
-            }
-        }
     
     nav {
         display: flex;
@@ -102,18 +68,9 @@ export const HeaderContent = styled.div`
         gap: 1rem;
     }
 
-    nav ~ a {
-        display: none;
-    }
-
     @media (max-width: 950px) {
-        padding: 1.75rem 1.5rem;  
         nav {
             display: none;
-        }
-
-        .closeIcon {
-        display: block;
         }
     }
 

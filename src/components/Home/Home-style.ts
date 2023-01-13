@@ -15,12 +15,14 @@ export const HomeContainer = styled.section`
         position: absolute;
         left: -9%;
         top: 0.15%;
+        z-index: 0;
     }
     
     .paralaxContainer {
         position: absolute;
         right: 10.5%;
         top: 0;
+        z-index: 1;
     }
 
     .paralaxItem {
@@ -131,7 +133,12 @@ export const HomeContainer = styled.section`
             position: relative;
             margin-top: 2rem;
             right: 0;
+            
+            .paralaxItem {
+                top: 70%;
+            }
         }
+
     }
 
     `
@@ -142,7 +149,7 @@ export const HomeContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
 
     max-width: 550px;
     max-height: 566px;
@@ -183,11 +190,15 @@ export const HomeContent = styled.div`
         }
 
         @media (max-width: 1105px) {
-            margin: 9rem 0 0 0%;
+            margin: 9rem 0 0 9%;
         }
 
         @media (max-width: 895px) {
-            margin: 6rem 0 0 7%;
+            margin: 6rem 0 0 6%;
+
+            .buttonContainer {
+                width: 100%;
+            }
         }
 
         @media (max-width: 821px) {
