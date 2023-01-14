@@ -1,20 +1,18 @@
-import { Main } from "./components/Main/Main"
-import { GlobalStyle } from "../styles/GlobalStyle"
-import { ThemeProvider } from "styled-components"
-import { defaultTheme } from "../styles/themes/defaultTheme"
-import { ParallaxProvider } from 'react-scroll-parallax';
-
+import { Main } from './components/Main'
+import { GlobalStyle } from '../styles/GlobalStyle'
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from '../styles/themes/defaultTheme'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 function App() {
-
   return (
     <>
-    <ParallaxProvider>
-     <ThemeProvider theme={defaultTheme}>
-        <Main />
-        <GlobalStyle />
-     </ThemeProvider>
-    </ParallaxProvider>
+      <ParallaxProvider>
+        <ThemeProvider theme={defaultTheme}>
+          <Main />
+          <GlobalStyle />
+        </ThemeProvider>
+      </ParallaxProvider>
     </>
   )
 }
