@@ -39,11 +39,13 @@ export function LeadCapture() {
     <LeadCaptureContainer id="contato">
       <Content>
         <FormContainer>
-          <h2>Realize sua consulta sem custo</h2>
-          <p>
-            Fale um pouco sobre o seu problema jurídico, assim que nossa equipe
-            avaliar, entraremos em contato!
-          </p>
+          <header>
+            <h2>Realize sua consulta sem custo</h2>
+            <p>
+              Fale um pouco sobre o seu problema jurídico, assim que nossa equipe
+              avaliar, entraremos em contato!
+            </p>
+          </header>
           <form onSubmit={handleSubmit(handleCreateNewSubmit)} action="">
             <FormRow>
               <InputContainer>

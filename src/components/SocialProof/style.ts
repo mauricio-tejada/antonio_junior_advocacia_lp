@@ -6,7 +6,8 @@ export const SocialProofContainer = styled.section`
   justify-content: space-between;
   position: relative;
 
-  margin-bottom: 21rem;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
   padding: 6.5rem 2rem 0 2rem;
 
   width: 100%;
@@ -15,7 +16,7 @@ export const SocialProofContainer = styled.section`
   .branchImg {
     position: absolute;
     left: -8%;
-    top: -120%;
+    top: -60%;
   }
 
   @media (max-width: 1024px) {

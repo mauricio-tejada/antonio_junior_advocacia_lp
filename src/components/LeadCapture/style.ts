@@ -15,12 +15,16 @@ export const LeadCaptureContainer = styled.section`
   background-size: cover;
   background-position: center;
 
-  margin-bottom: 12.5rem;
+  margin: 12.5rem 0 12.5rem 0;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 700px) {
+    height: 900px;
+  }
 `
 
 export const Content = styled.div`
@@ -37,9 +41,9 @@ export const Content = styled.div`
 export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 
   padding: 3rem;
 
@@ -50,31 +54,48 @@ export const FormContainer = styled.div`
 
   width: 100%;
   max-width: 44rem;
-  height: 42.37rem;
 
-  h2 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 125%;
-
-    color: ${(props) => props.theme.gray100};
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
     @media (max-width: 700px) {
-      font-size: 1.5rem;
+      align-items: flex-start;
+      }
+
+    h2 {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 125%;
+      text-align: center;
+      
+      color: ${(props) => props.theme.gray100};
+      
+      @media (max-width: 700px) {
+        font-size: 1.5rem;
+      }
+    }
+    
+    p {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 150%;
+      text-align: center;
+      
+      color: ${(props) => props.theme.gray050};
+
+      @media (max-width: 700px) {
+        text-align: left;
+      }
     }
   }
 
-  p {
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 150%;
-
-    color: ${(props) => props.theme.gray050};
-  }
 
   form {
     display: flex;
@@ -84,8 +105,6 @@ export const FormContainer = styled.div`
     gap: 1rem;
 
     width: 100%;
-
-    margin-top: 3.5rem;
 
     @media (max-width: 700px) {
       gap: 1rem;
