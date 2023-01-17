@@ -1,5 +1,10 @@
 import styled from 'styled-components'
+import { preprocess } from 'zod'
 import formBgImg from '../../assets/form_bg.svg'
+
+interface InputProps {
+  onEmpty?: Boolean
+}
 
 export const LeadCaptureContainer = styled.section`
   width: 100%;
@@ -76,7 +81,7 @@ export const FormContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 
     width: 100%;
 
@@ -86,65 +91,111 @@ export const FormContainer = styled.div`
       gap: 1rem;
     }
 
-    div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      flex: 1;
-      gap: 1rem;
-      width: 100%;
-
-      @media (max-width: 700px) {
-        flex-direction: column;
-      }
-    }
-
-    input,
-    textarea {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0.75rem 1rem;
-      width: 100%;
-
-      color: ${(props) => props.theme.gray100};
-
-      border: 2px solid;
-      border-color: ${(props) => props.theme.gray300};
-      border-radius: 6px;
-      background: transparent;
-
-      transition: background-color 0.5s;
-
-      &::placeholder {
-        color: ${(props) => props.theme.gray100};
-        font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 150%;
-      }
-
-      &:hover {
-        background: ${(props) => props.theme.gray600};
-      }
-
-      &:focus {
-        box-shadow: 0 0 0 0;
-        outline: 0;
-        border-color: ${(props) => props.theme.primaryDefault};
-      }
-    }
-
-    textarea {
-      resize: none;
-      width: 100%;
-    }
-
     button {
       width: 100%;
       max-width: 280px;
     }
   }
+`
+
+export const FormRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  gap: 2rem;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+`
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  p {
+    height: 0.75rem;
+    font-size: 0.75rem;
+  }
+`
+
+export const Input = styled.input<InputProps>`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.75rem 1rem;
+  width: 100%;
+
+  color: ${(props) => props.theme.gray100};
+
+  border: 2px solid;
+  border-color: ${(props) => props.onEmpty ? '#E55757' : props.theme.gray300};
+  border-radius: 6px;
+
+  background: transparent;
+  transition: background-color 0.5s;
+
+  &::placeholder {
+    color: ${(props) => props.theme.gray100};
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  &:hover {
+    background: ${(props) => props.theme.gray600};
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: ${(props) => props.theme.primaryDefault};
+  }
+`
+
+export const TextArea = styled.textarea<InputProps>`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.75rem 1rem;
+  width: 100%;
+
+  color: ${(props) => props.theme.gray100};
+
+  border: 2px solid;
+  border-color: ${(props) => props.onEmpty ? '#E55757' : props.theme.gray300};
+  border-radius: 6px;
+  background: transparent;
+
+  transition: background-color 0.5s;
+
+  &::placeholder {
+    color: ${(props) => props.theme.gray100};
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  &:hover {
+    background: ${(props) => props.theme.gray600};
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-color: ${(props) => props.theme.primaryDefault};
+  }
+
+  resize: none;
+  width: 100%;
 `
