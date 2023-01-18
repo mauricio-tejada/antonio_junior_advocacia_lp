@@ -1,4 +1,4 @@
-import linkedinImg from '../../assets/in-white.png'
+import linkedinImg from '../../assets/in_white.png'
 import faceImg from '../../assets/face-white.png'
 import instaImg from '../../assets/insta-white.png'
 import logoSidebarImg from '../../assets/logo-sidebar.png'

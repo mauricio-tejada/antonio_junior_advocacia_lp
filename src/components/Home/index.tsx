@@ -1,5 +1,5 @@
 import { HomeContainer, HomeContent } from './style'
-import homeImg from '../../assets/home_img.png'
+import homeImg from '../../assets/home_img.webp'
 import { DefaultButton, InvisibleButton } from '../Buttons/Buttons'
 import branchBgImg from '../../assets/branch_bg.png'
 import { Parallax } from 'react-scroll-parallax'

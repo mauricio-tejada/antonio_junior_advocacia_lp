@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         color: #fff;
 
         overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
     }
 
     html {
@@ -22,6 +23,16 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 87.5%;
         }
         scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+        border-radius: 8px;
+        width: 0.5rem;
+        background: rgba(37, 35, 42, 1);
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background: rgba(168, 168, 170, 1);
+  }
     }
 
     body, input, textarea, button {

@@ -8,6 +8,8 @@ export const MainContainer = styled.main`
   gap: 2rem;
 
   background: #1c1a22;
+
+  overflow-x: hidden;
 `
 
 export const SocialLinks = styled.div`

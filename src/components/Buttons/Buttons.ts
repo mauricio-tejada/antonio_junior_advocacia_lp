@@ -16,7 +16,7 @@ export const DefaultButton = styled.button`
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: ${(props) => props.theme.gray050};
+  color: ${(props) => props.theme.gray100};
 
   &:hover {
     background: ${(props) => props.theme.primaryDark};

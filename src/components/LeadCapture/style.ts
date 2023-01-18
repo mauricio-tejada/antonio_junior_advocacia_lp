@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { preprocess } from 'zod'
-import formBgImg from '../../assets/form_bg.svg'
+import formBgImg from '../../assets/form_bg.webp'
 
 interface InputProps {
   onEmpty?: Boolean
