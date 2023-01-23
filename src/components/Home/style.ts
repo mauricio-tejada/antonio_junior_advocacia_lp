@@ -150,7 +150,7 @@ export const HomeContainer = styled.section`
         transform: translateY(500px);
     }
     50% {
-        transform: translateY(-100px);
+        transform: translateY(-200px);
     }
     100% {
       right: -40%;

@@ -73,6 +73,7 @@ export const Content = styled.div`
 
   img {
     margin-top: -4.25rem;
+    margin-left: 2rem;
   }
 
   @media (max-width: 1024px) {
@@ -105,6 +106,8 @@ export const Content = styled.div`
 
     img:first-child {
       margin-top: 0;
+      margin-left: 0;
+
       z-index: 1;
     }
 
