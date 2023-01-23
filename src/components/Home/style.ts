@@ -23,6 +23,8 @@ export const HomeContainer = styled.section`
     right: 10.5%;
     top: 0;
     z-index: 1;
+
+    animation: showElementLeft 1s;
   }
 
   .paralaxItem {
@@ -31,6 +33,8 @@ export const HomeContainer = styled.section`
     height: 139px;
     right: -40%;
     top: 70%;
+
+    animation: showElementTop 1s;
 
     display: flex;
     flex-direction: column;
@@ -132,6 +136,27 @@ export const HomeContainer = styled.section`
       }
     }
   }
+
+  @keyframes showElementLeft {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  @keyframes showElementTop {
+    0% {
+        transform: translateY(500px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+      right: -40%;
+      top: 70%;
+    }
+  }
 `
 export const HomeContent = styled.div`
   margin: 9rem 0 0 16%;
@@ -145,6 +170,10 @@ export const HomeContent = styled.div`
   max-height: 566px;
   width: 44%;
 
+  h1 {
+    animation: showElementRight 1s;
+  }
+
   p {
     font-family: 'Fira Sans';
     font-weight: 400;
@@ -152,6 +181,8 @@ export const HomeContent = styled.div`
     line-height: 150%;
     color: #a8a8aa;
     opacity: 0.8;
+
+    animation: showElementRight 1.1s;
 
     width: 100%;
     max-width: 350px;
@@ -164,6 +195,8 @@ export const HomeContent = styled.div`
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+
+    animation: showElementRight 1.3s;
 
     width: 90%;
     max-width: 350px;
@@ -240,6 +273,17 @@ export const HomeContent = styled.div`
         width: 100%;
         max-width: 100%;
       }
+    }
+  }
+
+  @keyframes showElementRight {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
   }
 `

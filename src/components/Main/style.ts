@@ -8,9 +8,10 @@ export const MainContainer = styled.main`
   gap: 2rem;
 
   background: #1c1a22;
+  @media (max-width: 820px) {
+    overflow-x: hidden;
 
-  overflow-x: hidden;
-`
+  }`
 
 export const SocialLinks = styled.div`
   max-width: 1224px;
