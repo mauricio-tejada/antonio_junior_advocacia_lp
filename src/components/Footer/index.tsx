@@ -16,13 +16,13 @@ export function Footer() {
           </div>
         </div>
         <nav>
-          <a href="">
+        <a target="_blank" href="https://www.linkedin.com/in/antonio-junior-adv/">
             <img src={linkedinImg} alt="" />
           </a>
-          <a href="">
+          <a target="_blank" href="https://www.facebook.com/antoniojradv">
             <img src={faceImg} alt="" />
           </a>
-          <a href="">
+          <a target="_blank" href="https://www.instagram.com/antoniojunioradvocacia/">
             <img src={instaImg} alt="" />
           </a>
         </nav>
