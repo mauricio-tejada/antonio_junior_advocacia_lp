@@ -1,0 +1,30 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_1037_180)">
+<rect width="40" height="40" rx="20" fill="url(#paint0_linear_1037_180)" fill-opacity="0.08"/>
+<path d="M16.928 24L16.428 28" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 19V13.428C28 12.0871 26.9129 11 25.572 11H13.428C12.0871 11 11 12.0871 11 13.428V21.572C11 22.9129 12.0871 24 13.428 24H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.928 28H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 25.4948C23 27.1783 25.1183 28.4244 26.0607 28.8957C26.3373 29.0349 26.6635 29.0348 26.94 28.8953C27.8827 28.4238 30 27.1805 30 25.4948V23.0978C29.9919 22.8363 29.7878 22.6229 29.5268 22.6034C28.6406 22.5221 27.7923 22.2049 27.0702 21.6847C26.7299 21.4384 26.27 21.4384 25.9298 21.6847C25.2076 22.2049 24.3594 22.5221 23.4732 22.6034C23.2122 22.6229 23.0081 22.8363 23 23.0978V25.4948Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.0172 19.2553L14.681 19.8517L16.0172 18.6517" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 15.5H24" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.0172 15.2553L14.681 15.8517L16.0172 14.6517" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 19.5H22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="url(#paint1_linear_1037_180)" stroke-opacity="0.08"/>
+</g>
+<defs>
+<filter id="filter0_b_1037_180" x="-40" y="-40" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1037_180"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1037_180" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1037_180" x1="29" y1="37.5" x2="9" y2="3" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.46"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1037_180" x1="1.5" y1="3.76254e-07" x2="38" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

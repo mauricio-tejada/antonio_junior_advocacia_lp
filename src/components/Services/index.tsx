@@ -1,12 +1,12 @@
 import { ServiceCard, ServicesContainer, CardContainer } from './style'
-import arrowImg from '../../assets/arrow.png'
+import arrowImg from '../../assets/arrow.svg'
 import branchBgImg from '../../assets/branch_bg.png'
-import cardIconImg1 from '../../assets/card_icon_1.png'
-import cardIconImg2 from '../../assets/card_icon_2.png'
-import cardIconImg3 from '../../assets/card_icon_3.png'
-import cardIconImg4 from '../../assets/card_icon_4.png'
-import cardIconImg5 from '../../assets/card_icon_5.png'
-import cardIconImg6 from '../../assets/card_icon_6.png'
+import cardIconImg1 from '../../assets/card_icon_1.svg'
+import cardIconImg2 from '../../assets/card_icon_2.svg'
+import cardIconImg3 from '../../assets/card_icon_3.svg'
+import cardIconImg4 from '../../assets/card_icon_4.svg'
+import cardIconImg5 from '../../assets/card_icon_5.svg'
+import cardIconImg6 from '../../assets/card_icon_6.svg'
 
 export function Services() {
   return (

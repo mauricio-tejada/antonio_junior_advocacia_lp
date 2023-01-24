@@ -29,7 +29,7 @@ export function Home() {
             <p>Trabalhamos em prol da</p>
             <strong>Justiça</strong>
           </Parallax>
-          <img className="parallaxImg" src={homeImg} alt="estatua justiça" />
+          <img width={452} height={716} className="parallaxImg" src={homeImg} alt="estatua justiça" />
         </div>
       </div>
 

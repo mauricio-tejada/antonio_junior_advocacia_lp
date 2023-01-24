@@ -72,8 +72,6 @@ export const Content = styled.div`
   }
 
   img {
-    height: 100%;
-    width: 100%;
     margin-top: -4.25rem;
     margin-left: 2rem;
   }
@@ -89,6 +87,7 @@ export const Content = styled.div`
   @media (max-width: 940px) {
     img:first-child {
       width: 309.5px;
+      height: 424.75px;
     }
   }
 

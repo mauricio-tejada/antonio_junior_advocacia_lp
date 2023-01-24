@@ -4,7 +4,7 @@ import {
   SocialProofCard,
   SocialProofContainer,
 } from './style'
-import commentImg from '../../assets/comment_icon.png'
+import commentImg from '../../assets/comment_icon.svg'
 import { DefaultButton } from '../Buttons/Buttons'
 import branchBgImg from '../../assets/social_proof_branch.png'
 

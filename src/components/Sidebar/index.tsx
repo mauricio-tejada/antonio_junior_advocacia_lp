@@ -1,14 +1,14 @@
-import linkedinImg from '../../assets/in_white.png'
-import faceImg from '../../assets/face-white.png'
-import instaImg from '../../assets/insta-white.png'
-import logoSidebarImg from '../../assets/logo-sidebar.png'
+import linkedinImg from '../../assets/in_white.svg'
+import faceImg from '../../assets/face-white.svg'
+import instaImg from '../../assets/insta-white.svg'
+import logoSidebarImg from '../../assets/logo-sidebar.svg'
 import { Sidebar as SidebarContainer } from 'primereact/sidebar'
 import { SidebarButton, SidebarContent } from './style'
 import { useState } from 'react'
 import 'primereact/resources/themes/lara-light-indigo/theme.css' // theme
 import 'primereact/resources/primereact.min.css' // core css
 import 'primeicons/primeicons.css'
-import hambImg from '../../assets/hamb.png'
+import hambImg from '../../assets/hamb.svg'
 
 export function Sidebar() {
   const [visibleLeft, setVisibleLeft] = useState(false)

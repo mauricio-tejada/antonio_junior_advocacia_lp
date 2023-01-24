@@ -6,10 +6,10 @@ import { LeadCapture } from '../LeadCapture'
 import { Services } from '../Services'
 import { SocialProof } from '../SocialProof'
 import { ChatPopup, MainContainer, SocialLinks } from './style'
-import linkedinImg from '../../assets/linkedin_icon.png'
-import faceImg from '../../assets/face_icon.png'
-import instaImg from '../../assets/insta_icon.png'
-import wppImg from '../../assets/wpp-icon.png'
+import linkedinImg from '../../assets/linkedin_icon.svg'
+import faceImg from '../../assets/face_icon.svg'
+import instaImg from '../../assets/insta_icon.svg'
+import wppImg from '../../assets/wpp-icon.svg'
 import { Sidebar } from '../Sidebar'
 
 export function Main() {
@@ -23,13 +23,13 @@ export function Main() {
       <SocialLinks>
         <nav>
           <a target="_blank" href="https://www.linkedin.com/in/antonio-junior-adv/">
-            <img src={linkedinImg} alt="linkedin" />
+            <img width={40} height={40} src={linkedinImg} alt="linkedin" />
           </a>
           <a target="_blank" href="https://www.facebook.com/antoniojradv">
-            <img src={faceImg} alt="facebook" />
+            <img width={40} height={40} src={faceImg} alt="facebook" />
           </a>
           <a target="_blank" href="https://www.instagram.com/antoniojunioradvocacia/">
-            <img src={instaImg} alt="instagram" />
+            <img width={40} height={40} src={instaImg} alt="instagram" />
           </a>
         </nav>
       </SocialLinks>
