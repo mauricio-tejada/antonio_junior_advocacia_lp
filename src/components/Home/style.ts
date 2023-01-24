@@ -18,6 +18,11 @@ export const HomeContainer = styled.section`
     z-index: 0;
   }
 
+  .parallaxImg {
+    height: 100%;
+    width: 100%;
+  }
+
   .paralaxContainer {
     position: absolute;
     right: 10.5%;

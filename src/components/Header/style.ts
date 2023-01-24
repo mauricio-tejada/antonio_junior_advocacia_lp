@@ -33,6 +33,11 @@ export const LogoContainer = styled.div`
   align-items: center;
   gap: 0.5rem;
 
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
   a:last-child {
     img {
       opacity: 0;

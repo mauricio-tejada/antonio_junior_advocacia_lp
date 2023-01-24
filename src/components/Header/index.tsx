@@ -8,10 +8,10 @@ export function Header() {
     <HeaderContainer>
       <HeaderContent>
         <LogoContainer>
-          <a href="">
+          <a href="#home">
             <img src={logoSmallImg} alt="logomarca Antonio" />
           </a>
-          <a href="">
+          <a href="#home">
             <img src={logoExtendsImg} alt="Logomarca Antonio" />
           </a>
         </LogoContainer>

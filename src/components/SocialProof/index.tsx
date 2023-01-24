@@ -29,7 +29,7 @@ export function SocialProof() {
         <SocialProofCard>
           <div className="header">
             <p className="name">Lucas Vieira</p>
-            <img src={commentImg} alt="" />
+            <img src={commentImg} alt="comentario" />
           </div>
           <p className="content">
             O advogado Antônio Júnior foi um recurso inestimável quando se
@@ -41,7 +41,7 @@ export function SocialProof() {
         <SocialProofCard className="currentCard">
           <div className="header">
             <p className="name">Lucas Vieira</p>
-            <img src={commentImg} alt="" />
+            <img src={commentImg} alt="comentario" />
           </div>
           <p className="content">
             O advogado Antônio Júnior foi um recurso inestimável quando se
@@ -53,7 +53,7 @@ export function SocialProof() {
         <SocialProofCard>
           <div className="header">
             <p className="name">Lucas Vieira</p>
-            <img src={commentImg} alt="" />
+            <img src={commentImg} alt="comentario" />
           </div>
           <p className="content">
             O advogado Antônio Júnior foi um recurso inestimável quando se
@@ -64,7 +64,7 @@ export function SocialProof() {
         </SocialProofCard>
       </CardContainer>
 
-      <img className="branchImg" src={branchBgImg} alt="" />
+      <img className="branchImg" src={branchBgImg} alt="ramo defundo" />
     </SocialProofContainer>
   )
 }
