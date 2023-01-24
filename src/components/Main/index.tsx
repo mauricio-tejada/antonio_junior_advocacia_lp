@@ -23,13 +23,13 @@ export function Main() {
       <SocialLinks>
         <nav>
           <a target="_blank" href="https://www.linkedin.com/in/antonio-junior-adv/">
-            <img src={linkedinImg} alt="" />
+            <img src={linkedinImg} alt="linkedin" />
           </a>
           <a target="_blank" href="https://www.facebook.com/antoniojradv">
-            <img src={faceImg} alt="" />
+            <img src={faceImg} alt="facebook" />
           </a>
           <a target="_blank" href="https://www.instagram.com/antoniojunioradvocacia/">
-            <img src={instaImg} alt="" />
+            <img src={instaImg} alt="instagram" />
           </a>
         </nav>
       </SocialLinks>
@@ -39,7 +39,7 @@ export function Main() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={wppImg} alt="" />
+          <img src={wppImg} alt="whatsapp" />
         </a>
       </ChatPopup>
       <SocialProof />

@@ -9,10 +9,10 @@ export function Header() {
       <HeaderContent>
         <LogoContainer>
           <a href="">
-            <img src={logoSmallImg} alt="" />
+            <img src={logoSmallImg} alt="logomarca Antonio" />
           </a>
           <a href="">
-            <img src={logoExtendsImg} alt="" />
+            <img src={logoExtendsImg} alt="Logomarca Antonio" />
           </a>
         </LogoContainer>
         <nav>

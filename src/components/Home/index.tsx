@@ -29,11 +29,11 @@ export function Home() {
             <p>Trabalhamos em prol da</p>
             <strong>Justiça</strong>
           </Parallax>
-          <img className="parallaxImg" src={homeImg} alt="" />
+          <img className="parallaxImg" src={homeImg} alt="estatua justiça" />
         </div>
       </div>
 
-      <img className="branchBg" src={branchBgImg} alt="" />
+      <img className="branchBg" src={branchBgImg} alt="ramo fundo" />
     </HomeContainer>
   )
 }
