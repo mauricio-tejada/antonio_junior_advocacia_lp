@@ -78,11 +78,6 @@ export const HomeContainer = styled.section`
 
     .paralaxContainer {
       right: 5%;
-
-      .paralaxItem {
-        right: -35%;
-        top: 60%;
-      }
     }
   }
 
@@ -135,10 +130,6 @@ export const HomeContainer = styled.section`
       position: relative;
       margin-top: 2rem;
       right: 0;
-
-      .paralaxItem {
-        top: 70%;
-      }
     }
   }
 
