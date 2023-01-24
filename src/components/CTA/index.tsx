@@ -7,7 +7,7 @@ export function CTA() {
   return (
     <CTAContainer>
       <Content>
-        <img src={ctaImg} alt="" />
+        <img src={ctaImg} alt="balança simbolo da justiça" />
         <div>
           <h1>Sua justiça é a nossa prioridade</h1>
           <p>
@@ -23,7 +23,7 @@ export function CTA() {
             <DefaultButton>Entrar em contato</DefaultButton>
           </a>
         </div>
-        <img className="branchBg" src={branchBgImg} alt="" />
+        <img className="branchBg" src={branchBgImg} alt="ramo de fundo" />
       </Content>
     </CTAContainer>
   )

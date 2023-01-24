@@ -18,6 +18,7 @@ export function Sidebar() {
       <SidebarButton
         src={hambImg}
         onClick={() => setVisibleLeft(true)}
+        alt="mostrar sidebar"
       ></SidebarButton>
       <SidebarContainer
         style={{ background: 'rgba(97, 52, 203, 1)' }}
@@ -49,18 +50,18 @@ export function Sidebar() {
 
             <nav className="socialNav">
               <a href="">
-                <img src={linkedinImg} alt="" />
+                <img src={linkedinImg} alt="linkedin" />
               </a>
               <a href="">
-                <img src={faceImg} alt="" />
+                <img src={faceImg} alt="facebook" />
               </a>
               <a href="">
-                <img src={instaImg} alt="" />
+                <img src={instaImg} alt="instagram" />
               </a>
             </nav>
           </nav>
           <footer>
-            <img src={logoSidebarImg} alt="" />
+            <img src={logoSidebarImg} alt="logomarca Antonio" />
             <p>
               Empresa de advocacia especializada em resolver problemas
               jurídicos.
