@@ -49,15 +49,15 @@ export function Sidebar() {
             </a>
 
             <nav className="socialNav">
-              <a href="">
-                <img src={linkedinImg} alt="linkedin" />
-              </a>
-              <a href="">
-                <img src={faceImg} alt="facebook" />
-              </a>
-              <a href="">
-                <img src={instaImg} alt="instagram" />
-              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/antonio-junior-adv/">
+              <img width={40} height={40} src={linkedinImg} alt="linkedin" />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/antoniojradv">
+              <img width={40} height={40} src={faceImg} alt="facebook" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/antoniojunioradvocacia/">
+              <img width={40} height={40} src={instaImg} alt="instagram" />
+            </a>
             </nav>
           </nav>
           <footer>
