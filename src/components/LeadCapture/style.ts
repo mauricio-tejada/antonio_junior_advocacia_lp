@@ -62,7 +62,7 @@ export const FormContainer = styled.div`
 
     @media (max-width: 700px) {
       align-items: flex-start;
-      }
+    }
 
     h2 {
       font-family: 'Lato';
@@ -71,14 +71,14 @@ export const FormContainer = styled.div`
       font-size: 2.5rem;
       line-height: 125%;
       text-align: center;
-      
+
       color: ${(props) => props.theme.gray100};
-      
+
       @media (max-width: 700px) {
         font-size: 1.5rem;
       }
     }
-    
+
     p {
       font-family: 'Fira Sans';
       font-style: normal;
@@ -86,7 +86,7 @@ export const FormContainer = styled.div`
       font-size: 1.25rem;
       line-height: 150%;
       text-align: center;
-      
+
       color: ${(props) => props.theme.gray050};
 
       @media (max-width: 700px) {
@@ -94,7 +94,6 @@ export const FormContainer = styled.div`
       }
     }
   }
-
 
   form {
     display: flex;
@@ -153,7 +152,7 @@ export const Input = styled.input<InputProps>`
   color: ${(props) => props.theme.gray100};
 
   border: 2px solid;
-  border-color: ${(props) => props.onEmpty ? '#E55757' : props.theme.gray300};
+  border-color: ${(props) => (props.onEmpty ? '#E55757' : props.theme.gray300)};
   border-radius: 6px;
 
   background: transparent;
@@ -189,7 +188,7 @@ export const TextArea = styled.textarea<InputProps>`
   color: ${(props) => props.theme.gray100};
 
   border: 2px solid;
-  border-color: ${(props) => props.onEmpty ? '#E55757' : props.theme.gray300};
+  border-color: ${(props) => (props.onEmpty ? '#E55757' : props.theme.gray300)};
   border-radius: 6px;
   background: transparent;
 

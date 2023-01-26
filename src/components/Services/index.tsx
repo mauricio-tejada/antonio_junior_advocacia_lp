@@ -22,7 +22,12 @@ export function Services() {
         <ServiceCard>
           <div className="contentContainer">
             <div className="header">
-              <img width={40} height={40} src={cardIconImg1} alt="Direito Empresarial do trabalho" />
+              <img
+                width={40}
+                height={40}
+                src={cardIconImg1}
+                alt="Direito Empresarial do trabalho"
+              />
               <h3>Direito Empresarial do trabalho</h3>
             </div>
             <p className="description">
@@ -31,12 +36,21 @@ export function Services() {
             </p>
             <p className="casesCount">225 Casos solucionados</p>
           </div>
-          <img className="arrow" src={arrowImg} alt="ocultar mostrar conteudo" />
+          <img
+            className="arrow"
+            src={arrowImg}
+            alt="ocultar mostrar conteudo"
+          />
         </ServiceCard>
         <ServiceCard>
           <div className="contentContainer">
             <div className="header">
-              <img width={40} height={40} src={cardIconImg2} alt="Direito de família" />
+              <img
+                width={40}
+                height={40}
+                src={cardIconImg2}
+                alt="Direito de família"
+              />
               <h3>Direito de família</h3>
             </div>
             <p className="description">
@@ -45,12 +59,21 @@ export function Services() {
             </p>
             <p className="casesCount">225 Casos solucionados</p>
           </div>
-          <img className="arrow" src={arrowImg} alt="ocultar mostrar conteudo" />
+          <img
+            className="arrow"
+            src={arrowImg}
+            alt="ocultar mostrar conteudo"
+          />
         </ServiceCard>
         <ServiceCard>
           <div className="contentContainer">
             <div className="header">
-              <img width={40} height={40} src={cardIconImg3} alt="Direito tributário" />
+              <img
+                width={40}
+                height={40}
+                src={cardIconImg3}
+                alt="Direito tributário"
+              />
               <h3>Direito tributário</h3>
             </div>
             <p className="description">
@@ -59,12 +82,21 @@ export function Services() {
             </p>
             <p className="casesCount">225 Casos solucionados</p>
           </div>
-          <img className="arrow" src={arrowImg} alt="ocultar mostrar conteudo" />
+          <img
+            className="arrow"
+            src={arrowImg}
+            alt="ocultar mostrar conteudo"
+          />
         </ServiceCard>
         <ServiceCard>
           <div className="contentContainer">
             <div className="header">
-              <img width={40} height={40} src={cardIconImg4} alt="Direito digital" />
+              <img
+                width={40}
+                height={40}
+                src={cardIconImg4}
+                alt="Direito digital"
+              />
               <h3>Direito digital</h3>
             </div>
             <p className="description">
@@ -73,12 +105,21 @@ export function Services() {
             </p>
             <p className="casesCount">225 Casos solucionados</p>
           </div>
-          <img className="arrow" src={arrowImg} alt="ocultar mostrar conteudo" />
+          <img
+            className="arrow"
+            src={arrowImg}
+            alt="ocultar mostrar conteudo"
+          />
         </ServiceCard>
         <ServiceCard>
           <div className="contentContainer">
             <div className="header">
-              <img width={40} height={40} src={cardIconImg5} alt="Registro de marcas e patentes" />
+              <img
+                width={40}
+                height={40}
+                src={cardIconImg5}
+                alt="Registro de marcas e patentes"
+              />
               <h3>Registro de marcas e patentes</h3>
             </div>
             <p className="description">
@@ -87,12 +128,21 @@ export function Services() {
             </p>
             <p className="casesCount">225 Casos solucionados</p>
           </div>
-          <img className="arrow" src={arrowImg} alt="ocultar mostrar conteudo" />
+          <img
+            className="arrow"
+            src={arrowImg}
+            alt="ocultar mostrar conteudo"
+          />
         </ServiceCard>
         <ServiceCard>
           <div className="contentContainer">
             <div className="header">
-              <img width={40} height={40} src={cardIconImg6} alt="Cobrança extrajudicial" />
+              <img
+                width={40}
+                height={40}
+                src={cardIconImg6}
+                alt="Cobrança extrajudicial"
+              />
               <h3>Cobrança extrajudicial</h3>
             </div>
             <p className="description">
@@ -101,7 +151,11 @@ export function Services() {
             </p>
             <p className="casesCount">225 Casos solucionados</p>
           </div>
-          <img className="arrow" src={arrowImg} alt="ocultar mostrar conteudo" />
+          <img
+            className="arrow"
+            src={arrowImg}
+            alt="ocultar mostrar conteudo"
+          />
         </ServiceCard>
       </CardContainer>
 

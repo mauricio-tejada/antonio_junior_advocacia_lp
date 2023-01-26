@@ -42,8 +42,8 @@ export function LeadCapture() {
           <header>
             <h2>Realize sua consulta sem custo</h2>
             <p>
-              Fale um pouco sobre o seu problema jurídico, assim que nossa equipe
-              avaliar, entraremos em contato!
+              Fale um pouco sobre o seu problema jurídico, assim que nossa
+              equipe avaliar, entraremos em contato!
             </p>
           </header>
           <form onSubmit={handleSubmit(handleCreateNewSubmit)} action="">
@@ -87,16 +87,16 @@ export function LeadCapture() {
               </InputContainer>
             </FormRow>
 
-              <InputContainer>
-                <TextArea
-                  {...register('caso')}
-                  cols={25}
-                  rows={10}
-                  placeholder="Conte um pouco sobre o seu caso..."
-                  onEmpty={!!formState.errors.caso}
-                />
-                <p>{formState.errors.caso?.message}</p>
-              </InputContainer>
+            <InputContainer>
+              <TextArea
+                {...register('caso')}
+                cols={25}
+                rows={10}
+                placeholder="Conte um pouco sobre o seu caso..."
+                onEmpty={!!formState.errors.caso}
+              />
+              <p>{formState.errors.caso?.message}</p>
+            </InputContainer>
 
             <DefaultButton type="submit">
               Enviar consulta gratuita

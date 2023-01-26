@@ -71,7 +71,7 @@ export const HomeContainer = styled.section`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) or (max-height: 690px) {
     .parallaxImg {
       width: 400px;
     }
@@ -135,18 +135,18 @@ export const HomeContainer = styled.section`
 
   @keyframes showElementLeft {
     0% {
-        transform: translateX(500px);
+      transform: translateX(500px);
     }
     100% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
   }
   @keyframes showElementTop {
     0% {
-        transform: translateY(500px);
+      transform: translateY(500px);
     }
     50% {
-        transform: translateY(-200px);
+      transform: translateY(-200px);
     }
     100% {
       right: -40%;
@@ -197,9 +197,14 @@ export const HomeContent = styled.div`
     width: 90%;
     max-width: 350px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) or (max-height: 690px) {
     h1 {
       font-size: 3rem;
+    }
+  }
+  @media (max-height: 690px) {
+    p {
+      margin: 2.7rem 0 2rem 0;
     }
   }
 
@@ -274,12 +279,12 @@ export const HomeContent = styled.div`
 
   @keyframes showElementRight {
     0% {
-        transform: translateX(-500px);
-        opacity: 0;
+      transform: translateX(-500px);
+      opacity: 0;
     }
     100% {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 `

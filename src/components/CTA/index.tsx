@@ -7,7 +7,12 @@ export function CTA() {
   return (
     <CTAContainer>
       <Content>
-        <img width={496} height={680} src={ctaImg} alt="balança simbolo da justiça" />
+        <img
+          width={496}
+          height={680}
+          src={ctaImg}
+          alt="balança simbolo da justiça"
+        />
         <div>
           <h1>Sua justiça é a nossa prioridade</h1>
           <p>

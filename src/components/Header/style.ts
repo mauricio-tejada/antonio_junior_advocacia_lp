@@ -91,6 +91,5 @@ export const HeaderContent = styled.div`
     nav {
       display: none;
     }
-
   }
 `
