@@ -10,7 +10,6 @@
     "lint": "eslint src --ext .ts,.tsx --fix"
   },
   "dependencies": {
-    "@formspree/react": "^2.4.1",
     "@hookform/resolvers": "^2.9.10",
     "@types/styled-components": "^5.1.26",
     "primeicons": "^6.0.1",
